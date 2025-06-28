@@ -10,15 +10,19 @@ SimpleRouter::setDefaultNamespace('system\\controllers');
 // Define o caminho base do projeto
 SimpleRouter::setBasePath('/cursophp_rennova_site');
 
-// Rotas principais do fluxo do usuário
-SimpleRouter::get('/', 'SiteController@home');                       // Página inicial com visão rápida do produto
-SimpleRouter::get('/produtos', 'SiteController@produtos');          // Categorias de produtos
-SimpleRouter::get('/produto/{id}', 'SiteController@produto');       // Página do produto
-SimpleRouter::get('/carrinho', 'SiteController@carrinho');          // Carrinho de compras
-SimpleRouter::get('/checkout', 'SiteController@checkout');          // Página de checkout
-SimpleRouter::post('/checkout/processar', 'SiteController@processarPagamento'); // Processa pagamento
-SimpleRouter::get('/pagamento/sucesso', 'SiteController@sucesso');  // Página de sucesso
-SimpleRouter::get('/pagamento/erro', 'SiteController@erro');        // Página de erro
+// Rotas principais
+SimpleRouter::get('/', 'SiteController@home');
+SimpleRouter::get('/produtos', 'SiteController@produtos');
+SimpleRouter::get('/produto/{id}', 'SiteController@produto');
+SimpleRouter::get('/carrinho', 'SiteController@carrinho');
+SimpleRouter::get('/checkout', 'SiteController@checkout');
+SimpleRouter::post('/checkout/processar', 'SiteController@processarPagamento');
+SimpleRouter::get('/pagamento/sucesso', 'SiteController@sucesso');
+SimpleRouter::get('/pagamento/erro', 'SiteController@erro');
+
+// 🆕 Rota para a página de login
+SimpleRouter::get('/login', 'AuthController@login');
 
 // Inicia o roteador
 SimpleRouter::start();
+

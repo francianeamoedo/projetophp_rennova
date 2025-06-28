@@ -10,41 +10,46 @@
       <p class="text-muted">Experimente uma nova fonte de hidratação, amplifique a beleza e a luminosidade da sua pele.</p>
     </div>
 
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
-      <?php for ($i = 1; $i <= 8; $i++): ?>
-        <div class="col">
-          <div class="card product-card h-100 shadow-sm">
-            <img src="assets/images/produto_exemplo.jpg" class="card-img-top" alt="Produto <?php echo $i; ?>">
-            <div class="card-body d-flex flex-column">
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+  <?php for ($i = 1; $i <= 8; $i++): ?>
+    <div class="col">
+      <div class="card product-card h-100 shadow-sm">
+        
+        <!-- Imagem clicável corretamente estruturada -->
+        <a href="creme_facial_com_acido_hialuronico.php">
+          <img src="assets/images/produto_exemplo.jpg" class="card-img-top" alt="Produto <?php echo $i; ?>">
+        </a>
+        
+        <div class="card-body d-flex flex-column">
+          <!-- conteúdo do card continua aqui -->
 
-              <div class="mb-2">
-                <span class="text-warning">★★★★☆</span>
-                <small class="text-muted ms-2">(<?php echo rand(10, 50); ?> 3,144 Reviews)</small>
-              </div>
 
-              <h5 class="card-title">Produto <?php echo $i; ?></h5>
-
-              <div class="d-flex align-items-baseline gap-2 mb-3">
-                <p class="text-muted mb-0"><s>€49,99</s></p>
-                <p class="fw-bold text-danger mb-0">€29,99</p>
-              </div>
-
-              <div class="quantity-selector d-flex justify-content-center align-items-center gap-2 mb-3">
-                <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">-</button>
-                <input type="number" class="form-control text-center quantity-input" value="1" min="1">
-                <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
-              </div>
-
-              <a href="#" class="btn btn-primary mt-auto">Comprar agora</a>
-
-            </div>
+          <div class="mb-2">
+            <span class="text-warning">★★★★☆</span>
+            <small class="text-muted ms-2">(<?php echo rand(10, 50); ?> avaliações)</small>
           </div>
-        </div>
-      <?php endfor; ?>
-    </div>
 
-  </div>
-</section>
+          <h5 class="card-title">Creme Facial com Ácido Hialurônico SPF 50, 40g <?php echo $i; ?></h5>
+
+          <div class="d-flex align-items-baseline gap-2 mb-3">
+            <p class="text-muted mb-0"><s>€49,99</s></p>
+            <p class="fw-bold text-danger mb-0">€29,99</p>
+          </div>
+
+          <div class="quantity-selector d-flex justify-content-center align-items-center gap-2 mb-3" data-product-index="<?php echo $i; ?>">
+            <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button" data-action="decrement" data-product-index="<?php echo $i; ?>">-</button>
+            <input id="quantity-input-<?php echo $i; ?>" type="number" class="form-control text-center quantity-input" value="1" min="1" data-product-index="<?php echo $i; ?>" style="width: 60px;">
+            <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button" data-action="increment" data-product-index="<?php echo $i; ?>">+</button>
+          </div>
+
+          <a href="carrinho.php" class="btn btn-primary mt-auto">Comprar agora</a>
+
+        </div>
+      </div>
+    </div>
+  <?php endfor; ?>
+</div>
+
 
 <section class="novidades-section py-5">
   <div class="container">
