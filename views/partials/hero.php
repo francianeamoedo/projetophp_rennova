@@ -7,7 +7,7 @@
                                 e elegância</h1>
             <h4>Descubra agora a linha 
                             ideal para você.</h4>
-            <a href="#" class="btn btn-light btn-lg">QUERO UMA PELE BONITA</a>
+            <a href="categoria.php" class="btn btn-light btn-lg">QUERO UMA PELE BONITA</a>
         </div>
     </div>
 </section>

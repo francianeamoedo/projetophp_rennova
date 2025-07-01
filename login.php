@@ -10,7 +10,7 @@
   <div class="login-container">
     <div class="back-tela-wrapper">
       <img src="assets/images/back_tela.png" alt="Fundo do painel" class="back-tela-image" />
-      <form class="login-box" method="post" action="login_process.php">
+
         <h2>Entrar</h2>
 
         <label for="email">E-mail</label>
