@@ -1,11 +1,13 @@
 <?php
+// system/controllers/DashboardController.php
 
-namespace system\controllers;
+namespace Franc\Franc\system\controllers;
 
-class AuthController
+class DashboardController
 {
-    public function login()
+    public function index(): void
     {
-        require_once 'login.php';
+        include __DIR__ . '/../../views/dashboard.php';
     }
 }
+

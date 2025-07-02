@@ -2,8 +2,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
-  color: #333;
-  background-color: #fff;
+  color: #2B3E28;
+
 }
 
 /* Hero Section */
@@ -29,14 +29,13 @@ body {
 
 /* Info Bar */
 .info-bar {
-  background-color: #f5f5f5;
+  background-color: #F9F5F1;
   padding: 20px 0;
-  border-bottom: 1px solid #ddd;
 }
 
 .info-bar .icon {
   font-size: 2rem;
-  color: #f62c07;
+
 }
 
 /* Card de Produto */
@@ -127,7 +126,7 @@ body {
 
 /* Folhas background (seção final) */
 .folhas-section {
-  background: url('../images/folhas.svg') no-repeat center center / cover;
+  background: url('../images/folhas.png') no-repeat center center / cover;
   height: 120px;
 }
 
@@ -161,18 +160,18 @@ body {
 }
 
 .btn-outline-primary {
-  color: #f62c07;
-  border-color: #f62c07;
+  color: #6A9A64;
+
 }
 
 .btn-outline-primary:hover {
-  background-color: #f62c07;
+  background-color: #6A9A64;
   color: #fff;
 }
 
 /* Botões secundários */
 .btn-outline-secondary:hover {
-  background-color: #eee;
+  background-color: #6A9A64;
 }
 
 /* Paginação (se for usada em produtos.php) */
@@ -181,11 +180,11 @@ body {
 }
 
 .pagination .page-link {
-  color: #f62c07;
+  color: #6A9A64;
 }
 
 .pagination .page-link:hover {
-  background-color: #f62c07;
+  background-color: #6A9A64;
   color: #fff;
 }
 

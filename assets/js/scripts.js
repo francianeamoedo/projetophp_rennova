@@ -14,8 +14,6 @@ document.querySelectorAll('.quantity-btn').forEach(button => {
   });
 });
 
-
-  <script>
   const btnDescricao = document.getElementById('btn-descricao');
   const btnComoUsar = document.getElementById('btn-como-usar');
   const btnIngredientes = document.getElementById('btn-ingredientes');

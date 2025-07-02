@@ -1,3 +1,6 @@
+<?php
+require_once __DIR__ . '/vendor/autoload.php';?>
+
 <?php include 'includes/header.php'; ?>
 <?php include_once 'views/partials/hero.php'; ?>
 <?php include 'views/partials/info-bar.php'; ?>
