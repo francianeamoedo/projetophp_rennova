@@ -1,4 +1,5 @@
 RewriteEngine On
+
 RewriteBase /projetophp_rennova/
 
 RewriteCond %{REQUEST_FILENAME} !-f

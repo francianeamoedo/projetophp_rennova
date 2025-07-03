@@ -1,18 +1,17 @@
 {
-    "name": "franc/rennova",
-    "type": "project",
-    "autoload": {
-        "psr-4": {
-            "system\\": "system/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Franciane Amoedo"
-        }
-    ],
-    "require": {
-        "pecee/simple-router": "^4.3"
+  "name": "franc/rennova",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
     }
+  },
+  "authors": [
+    {
+      "name": "Franciane Amoedo"
+    }
+  ],
+  "require": {
+    "pecee/simple-router": "^4.3"
+  }
 }
-
