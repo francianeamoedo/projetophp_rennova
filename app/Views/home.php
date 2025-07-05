@@ -17,7 +17,7 @@
         <div class="card product-card h-100 shadow-sm">
 
           <!-- Imagem clicável corretamente estruturada -->
-          <a href="creme_facial_com_acido_hialuronico.php">
+          <a href="produto/<?php echo $i; ?>" class="text-decoration-none">
             <img src="assets/images/serum-skin-facial.png" class="card-img-top" alt="Produto <?php echo $i; ?>">
           </a>
 
@@ -47,7 +47,7 @@
                 data-product-index="<?php echo $i; ?>">+</button>
             </div>
 
-            <a href="carrinho.php" class="btn btn-primary mt-auto">Comprar agora</a>
+            <a href="carrinho" class="btn btn-primary mt-auto">Comprar agora</a>
 
           </div>
         </div>

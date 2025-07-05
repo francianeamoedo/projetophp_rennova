@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -25,11 +25,11 @@
 
   <!-- Header com sombra e navegação -->
   <header class="container-fluid shadow-sm bg-white sticky-top">
-    <div class="container d-flex flex-wrap justify-content-between align-items-center py-3">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
 
       <!-- Logo -->
       <a href="home" class="d-flex align-items-center mb-3 mb-lg-0 me-3 text-decoration-none">
-        <img src="assets/images/Logotipo.oficial_colorido.png" alt="Logo Rennova" style="height: 40px; width: auto;">
+        <img src="assets/images/Logotipo.oficial_colorido.png" alt="Logo Rennova" style="height: 90px;">
       </a>
 
       <!-- Caixa de pesquisa -->
@@ -41,18 +41,21 @@
       <!-- Botões de ação -->
       <div class="d-flex align-items-center gap-3">
         <div class="text-center">
-          <a href="#" class="btn btn-outline-secondary">
-            <i class="bi bi-shop fs-5"></i><br>Lojas
+          <a href="#" role="button" class="btn btn-sm">
+            <i class="bi bi-shop fs-5"></i><br />
+            <span class="fs-6">Lojas</span>
           </a>
         </div>
         <div class="text-center">
-          <a href="carrinho.php" class="btn btn-outline-secondary">
-            <i class="bi bi-cart fs-5"></i><br>Carrinho
+          <a href="carrinho" role="button" class="btn btn-sm">
+            <i class="bi bi-cart fs-5"></i><br />
+            <span class="fs-6">Carrinho</span>
           </a>
         </div>
         <div class="text-center">
-          <a href="#" class="btn btn-outline-secondary">
-            <i class="bi bi-person fs-5"></i><br>Iniciar Sessão
+          <a href="#" role="button" class="btn btn-sm">
+            <i class="bi bi-person fs-5"></i><br />
+            <span class="fs-6">Iniciar Sessão</span>
           </a>
         </div>
       </div>

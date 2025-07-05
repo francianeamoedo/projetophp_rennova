@@ -8,37 +8,38 @@
     <!-- COLUNA 1: Lista de Produtos -->
     <div class="col-md-8">
       <?php for ($i = 1; $i <= 5; $i++): ?>
-        <div class="card mb-4 cart-item p-3">
-          <div class="row g-3 align-items-center">
-            <!-- Imagem do Produto -->
-            <div class="col-3">
-              <img src="assets/images/produto_exemplo.jpg" class="img-fluid rounded" alt="Produto <?php echo $i; ?>">
+      <div class="card mb-4 cart-item p-3">
+        <div class="row g-3 align-items-center">
+          <!-- Imagem do Produto -->
+          <div class="col-3">
+            <img src="assets/images/produto_exemplo.jpg" class="img-fluid rounded" alt="Produto <?php echo $i; ?>">
+          </div>
+
+          <!-- Informações do Produto -->
+          <div class="col-9">
+            <p class="text-muted small mb-1">Serum/Ampoule, Dry Skin, Oily Skin, Sensitive Skin</p>
+            <h5 class="mb-2">Nome do Produto <?php echo $i; ?></h5>
+
+            <div class="d-flex align-items-center gap-3 mb-2">
+              <span class="fw-bold text-danger">€14,99</span>
+              <span class="text-muted text-decoration-line-through">€29,99</span>
+              <span class="badge bg-warning text-dark">50% OFF</span>
             </div>
 
-            <!-- Informações do Produto -->
-            <div class="col-9">
-              <p class="text-muted small mb-1">Serum/Ampoule, Dry Skin, Oily Skin, Sensitive Skin</p>
-              <h5 class="mb-2">Nome do Produto <?php echo $i; ?></h5>
-
-              <div class="d-flex align-items-center gap-3 mb-2">
-                <span class="fw-bold text-danger">€14,99</span>
-                <span class="text-muted text-decoration-line-through">€29,99</span>
-                <span class="badge bg-warning text-dark">50% OFF</span>
+            <div class="d-flex align-items-center gap-3 mb-2">
+              <div class="quantity-selector d-flex align-items-center">
+                <button class="btn btn-outline-secondary btn-sm">-</button>
+                <input type="number" class="form-control text-center mx-2 quantity-input" value="1" min="1"
+                  style="width: 60px;">
+                <button class="btn btn-outline-secondary btn-sm">+</button>
               </div>
 
-              <div class="d-flex align-items-center gap-3 mb-2">
-                <div class="quantity-selector d-flex align-items-center">
-                  <button class="btn btn-outline-secondary btn-sm">-</button>
-                  <input type="number" class="form-control text-center mx-2 quantity-input" value="1" min="1" style="width: 60px;">
-                  <button class="btn btn-outline-secondary btn-sm">+</button>
-                </div>
-
-                <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-heart"></i></button>
-                <button class="btn btn-outline-danger btn-sm"><i class="bi bi-trash"></i></button>
-              </div>
+              <button class="btn btn-outline-secondary btn-sm"><i class="bi bi-heart"></i></button>
+              <button class="btn btn-outline-danger btn-sm"><i class="bi bi-trash"></i></button>
             </div>
           </div>
         </div>
+      </div>
       <?php endfor; ?>
     </div>
 
@@ -83,7 +84,7 @@
       </div>
 
       <!-- Botão de Checkout -->
-      <a href="checkout.php" class="btn btn-success w-100 py-2 fw-bold">
+      <a href="checkout" class="btn btn-success w-100 py-2 fw-bold">
         Checkout (€94,30)
       </a>
     </div>
@@ -229,4 +230,4 @@
       </div>
     </div>
 
-<?php include 'includes/footer.php'; ?>
+    <?php include 'includes/footer.php'; ?>

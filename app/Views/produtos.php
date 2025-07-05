@@ -4,7 +4,7 @@
 <section class="py-5">
   <div class="container">
     <div class="row">
-      
+
       <!-- BARRA LATERAL DE FILTROS -->
       <div class="col-md-3">
         <h5 class="mb-4">FILTROS</h5>
@@ -54,7 +54,7 @@
         <!-- BARRA DE PESQUISA E ORDENAÇÃO -->
         <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
           <input type="text" class="form-control" placeholder="Pesquisar produtos..." style="max-width: 300px;">
-          
+
           <select class="form-select" style="max-width: 200px;">
             <option selected>Ordenar por</option>
             <option value="1">Menor preço</option>
@@ -67,20 +67,20 @@
         <!-- GRID DE PRODUTOS -->
         <div class="row g-4">
           <?php for ($i = 1; $i <= 12; $i++): ?>
-            <div class="col-md-3">
-              <div class="card product-card h-100 border-0 shadow-sm">
-                <img src="assets/images/produto1.jpg" class="card-img-top" alt="Produto <?= $i ?>">
-                <div class="card-body">
-                  <h6 class="card-title">Produto <?= $i ?></h6>
-                  <p class="card-text small text-muted">Breve descrição do produto</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <span class="fw-bold text-danger">R$ 31,99</span>
-                    <small class="text-muted"><s>R$ 54,99</s></small>
-                  </div>
-                  <a href="produto.php" class="btn btn-outline-success btn-sm mt-3 w-100">Ver detalhes</a>
+          <div class="col-md-3">
+            <div class="card product-card h-100 border-0 shadow-sm">
+              <img src="assets/images/produto1.jpg" class="card-img-top" alt="Produto <?= $i ?>">
+              <div class="card-body">
+                <h6 class="card-title">Produto <?= $i ?></h6>
+                <p class="card-text small text-muted">Breve descrição do produto</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-danger">R$ 31,99</span>
+                  <small class="text-muted"><s>R$ 54,99</s></small>
                 </div>
+                <a href="produto/<?= $i ?>" class="btn btn-outline-success btn-sm mt-3 w-100">Ver detalhes</a>
               </div>
             </div>
+          </div>
           <?php endfor; ?>
         </div>
 

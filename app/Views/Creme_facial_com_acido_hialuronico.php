@@ -5,15 +5,15 @@
 
     <!-- COLUNA 1: Imagens pequenas -->
     <div class="col-md-2 d-flex flex-column gap-3">
-      <img src="assets/images/produto1.jpg" class="img-fluid rounded border" alt="Miniatura 1">
-      <img src="assets/images/produto2.jpg" class="img-fluid rounded border" alt="Miniatura 2">
-      <img src="assets/images/produto3.jpg" class="img-fluid rounded border" alt="Miniatura 3">
-      <img src="assets/images/produto4.jpg" class="img-fluid rounded border" alt="Miniatura 4">
+      <img src="assets/images/product1.png" class="img-fluid rounded border" alt="Miniatura 1">
+      <img src="assets/images/product2.png" class="img-fluid rounded border" alt="Miniatura 2">
+      <img src="assets/images/product3.png" class="img-fluid rounded border" alt="Miniatura 3">
+      <img src="assets/images/product4.png" class="img-fluid rounded border" alt="Miniatura 4">
     </div>
 
     <!-- COLUNA 2: Imagem principal -->
     <div class="col-md-5">
-      <img src="assets/images/produto1.jpg" class="img-fluid rounded shadow-sm" alt="Produto principal">
+      <img src="assets/images/product1.png" class="img-fluid rounded shadow-sm" alt="Produto principal">
     </div>
 
     <!-- COLUNA 3: Informações -->
@@ -28,7 +28,9 @@
 
       <!-- Descrição -->
       <p class="text-muted">
-        O Creme Facial Rennova com Ácido Hialurônico e FPS 50 nutre profundamente a pele, suaviza linhas finas e protege contra os raios UVA/UVB. Textura leve, rápida absorção e ação antienvelhecimento para uma pele radiante, firme e protegida todos os dias.
+        O Creme Facial Rennova com Ácido Hialurônico e FPS 50 nutre profundamente a pele, suaviza linhas finas e protege
+        contra os raios UVA/UVB. Textura leve, rápida absorção e ação antienvelhecimento para uma pele radiante, firme e
+        protegida todos os dias.
       </p>
 
       <!-- Preço -->
@@ -45,12 +47,12 @@
         <button class="btn btn-outline-secondary quantity-btn">+</button>
       </div>
 
-            <p class="text-muted">36 Itens em estoque</p>
+      <p class="text-muted">36 Itens em estoque</p>
 
       <!-- Botões de ação -->
       <div class="d-flex flex-wrap gap-2">
         <button class="btn btn-primary">Adicionar ao Carrinho</button>
-        <a href="carrinho.php" class="btn btn-outline-primary">Comprar Agora</a>
+        <a href="carrinho" class="btn btn-outline-primary">Comprar Agora</a>
         <button class="btn btn-outline-secondary"><i class="bi bi-heart"></i> Favoritar</button>
       </div>
     </div>
@@ -66,13 +68,13 @@
   </div>
 
   <!-- Conteúdo da aba (lista com 4 frases) -->
-   <div>
-  <ul>
-    <li>Hidratação intensa e proteção diária em um só gesto.</li>
-    <li>Textura leve, rápida absorção e ação antienvelhecimento para uma pele radiante, firme e protegida.</li>
-    <li>Nutre a pele, suaviza linhas finas e protege contra os raios UVA/UVB.</li>
-    <li>Estimula a produção natural de colágeno, promovendo firmeza e elasticidade da pele com o uso contínuo.</li>
-  </ul>
+  <div>
+    <ul>
+      <li>Hidratação intensa e proteção diária em um só gesto.</li>
+      <li>Textura leve, rápida absorção e ação antienvelhecimento para uma pele radiante, firme e protegida.</li>
+      <li>Nutre a pele, suaviza linhas finas e protege contra os raios UVA/UVB.</li>
+      <li>Estimula a produção natural de colágeno, promovendo firmeza e elasticidade da pele com o uso contínuo.</li>
+    </ul>
   </div>
 </section>
 <section class="container py-5">
@@ -80,7 +82,8 @@
   <!-- Barra de pesquisa e ordenação - alinhada com as colunas abaixo -->
   <div class="row mb-4">
     <div class="col-md-4 d-flex gap-2 flex-wrap align-items-center">
-      <input type="text" class="form-control" placeholder="Pesquisar produtos..." style="min-width: 0; flex-grow: 1; max-width: 100%;">
+      <input type="text" class="form-control" placeholder="Pesquisar produtos..."
+        style="min-width: 0; flex-grow: 1; max-width: 100%;">
     </div>
     <div class="col-md-8 d-flex justify-content-start justify-content-md-end gap-2 flex-wrap">
       <select class="form-select" style="max-width: 200px; min-width: 200px;">
@@ -114,35 +117,40 @@
         <div class="d-flex align-items-center mb-2">
           <span class="me-2 text-warning">★★★★★</span>
           <div class="progress flex-grow-1 me-2" style="height: 10px;">
-            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="80"
+              aria-valuemin="0" aria-valuemax="100"></div>
           </div>
           <small>120</small>
         </div>
         <div class="d-flex align-items-center mb-2">
           <span class="me-2 text-warning">★★★★☆</span>
           <div class="progress flex-grow-1 me-2" style="height: 10px;">
-            <div class="progress-bar bg-warning" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 10%;" aria-valuenow="10"
+              aria-valuemin="0" aria-valuemax="100"></div>
           </div>
           <small>15</small>
         </div>
         <div class="d-flex align-items-center mb-2">
           <span class="me-2 text-warning">★★★☆☆</span>
           <div class="progress flex-grow-1 me-2" style="height: 10px;">
-            <div class="progress-bar bg-warning" role="progressbar" style="width: 5%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 5%;" aria-valuenow="5"
+              aria-valuemin="0" aria-valuemax="100"></div>
           </div>
           <small>8</small>
         </div>
         <div class="d-flex align-items-center mb-2">
           <span class="me-2 text-warning">★★☆☆☆</span>
           <div class="progress flex-grow-1 me-2" style="height: 10px;">
-            <div class="progress-bar bg-warning" role="progressbar" style="width: 3%;" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 3%;" aria-valuenow="3"
+              aria-valuemin="0" aria-valuemax="100"></div>
           </div>
           <small>4</small>
         </div>
         <div class="d-flex align-items-center mb-2">
           <span class="me-2 text-warning">★☆☆☆☆</span>
           <div class="progress flex-grow-1 me-2" style="height: 10px;">
-            <div class="progress-bar bg-warning" role="progressbar" style="width: 2%;" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 2%;" aria-valuenow="2"
+              aria-valuemin="0" aria-valuemax="100"></div>
           </div>
           <small>2</small>
         </div>
@@ -163,8 +171,10 @@
 
         <!-- Imagens abaixo da mensagem -->
         <div class="d-flex gap-3 mb-3">
-          <img src="assets/images/avaliacao_img1.jpg" alt="Imagem 1" class="img-thumbnail" style="width: 80px; height: 80px; object-fit: cover;">
-          <img src="assets/images/avaliacao_img2.jpg" alt="Imagem 2" class="img-thumbnail" style="width: 80px; height: 80px; object-fit: cover;">
+          <img src="assets/images/avaliacao_img1.jpg" alt="Imagem 1" class="img-thumbnail"
+            style="width: 80px; height: 80px; object-fit: cover;">
+          <img src="assets/images/avaliacao_img2.jpg" alt="Imagem 2" class="img-thumbnail"
+            style="width: 80px; height: 80px; object-fit: cover;">
         </div>
 
         <div class="d-flex align-items-center gap-3">
@@ -190,8 +200,10 @@
         <p>“Gostei bastante, textura leve e rápida absorção. Recomendo!”</p>
 
         <div class="d-flex gap-3 mb-3">
-          <img src="assets/images/avaliacao_img3.jpg" alt="Imagem 3" class="img-thumbnail" style="width: 80px; height: 80px; object-fit: cover;">
-          <img src="assets/images/avaliacao_img4.jpg" alt="Imagem 4" class="img-thumbnail" style="width: 80px; height: 80px; object-fit: cover;">
+          <img src="assets/images/avaliacao_img3.jpg" alt="Imagem 3" class="img-thumbnail"
+            style="width: 80px; height: 80px; object-fit: cover;">
+          <img src="assets/images/avaliacao_img4.jpg" alt="Imagem 4" class="img-thumbnail"
+            style="width: 80px; height: 80px; object-fit: cover;">
         </div>
 
         <div class="d-flex align-items-center gap-3">
@@ -217,8 +229,10 @@
         <p>“O produto é bom, mas senti que a fragrância poderia ser mais suave.”</p>
 
         <div class="d-flex gap-3 mb-3">
-          <img src="assets/images/avaliacao_img5.jpg" alt="Imagem 5" class="img-thumbnail" style="width: 80px; height: 80px; object-fit: cover;">
-          <img src="assets/images/avaliacao_img6.jpg" alt="Imagem 6" class="img-thumbnail" style="width: 80px; height: 80px; object-fit: cover;">
+          <img src="assets/images/avaliacao_img5.jpg" alt="Imagem 5" class="img-thumbnail"
+            style="width: 80px; height: 80px; object-fit: cover;">
+          <img src="assets/images/avaliacao_img6.jpg" alt="Imagem 6" class="img-thumbnail"
+            style="width: 80px; height: 80px; object-fit: cover;">
         </div>
 
         <div class="d-flex align-items-center gap-3">
@@ -245,7 +259,7 @@
       <!-- Card 1 -->
       <div class="col" style="flex: 0 0 auto; min-width: 250px;">
         <div class="card product-card h-100 text-center p-3 shadow-sm">
-          <img src="assets/images/produto1.png" class="card-img-top" alt="Produto 1">
+          <img src="assets/images/product1.png" class="card-img-top" alt="Produto 1">
 
           <div class="card-body">
             <div class="mb-2">
@@ -278,7 +292,7 @@
       <!-- Card 2 -->
       <div class="col" style="flex: 0 0 auto; min-width: 250px;">
         <div class="card product-card h-100 text-center p-3 shadow-sm">
-          <img src="assets/images/produto2.png" class="card-img-top" alt="Produto 2">
+          <img src="assets/images/product2.png" class="card-img-top" alt="Produto 2">
 
           <div class="card-body">
             <div class="mb-2">
@@ -311,7 +325,7 @@
       <!-- Card 3 -->
       <div class="col" style="flex: 0 0 auto; min-width: 250px;">
         <div class="card product-card h-100 text-center p-3 shadow-sm">
-          <img src="assets/images/produto3.png" class="card-img-top" alt="Produto 3">
+          <img src="assets/images/product3.png" class="card-img-top" alt="Produto 3">
 
           <div class="card-body">
             <div class="mb-2">
@@ -344,7 +358,7 @@
       <!-- Card 4 -->
       <div class="col" style="flex: 0 0 auto; min-width: 250px;">
         <div class="card product-card h-100 text-center p-3 shadow-sm">
-          <img src="assets/images/produto4.png" class="card-img-top" alt="Produto 4">
+          <img src="assets/images/product4.png" class="card-img-top" alt="Produto 4">
 
           <div class="card-body">
             <div class="mb-2">
@@ -388,5 +402,3 @@
 
 
 <?php include 'includes/footer.php'; ?>
-
-

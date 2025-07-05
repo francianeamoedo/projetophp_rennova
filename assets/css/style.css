@@ -1,0 +1,250 @@
+/* Reset básico */
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  color: #2b3e28;
+}
+
+/* Hero Section */
+.hero-section {
+  background: url("assets/images/skincare_hero.png") no-repeat center center;
+  background-size: cover;
+  height: 500px;
+  height: 100vh;
+  padding: 80px 0;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+}
+
+/* Info Bar */
+.info-bar {
+  background-color: #f9f5f1;
+  padding: 20px 0;
+}
+
+.info-bar .icon {
+  font-size: 2rem;
+}
+
+/* Card de Produto */
+.product-card {
+  transition: transform 0.2s;
+  border: none;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+}
+
+.product-card h5 {
+  font-size: 1rem;
+}
+
+.product-card .btn {
+  font-size: 0.875rem;
+}
+
+/* Seção de Benefícios */
+.beneficios-section {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.beneficios-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Título com imagem de fundo */
+.titulo-bg-section {
+  height: 350px;
+  overflow: hidden;
+}
+
+.titulo-conteudo {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;
+}
+
+.titulo-conteudo h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.titulo-conteudo p {
+  font-size: 1rem;
+}
+
+/* Imagem Cards com Hover */
+.imagem-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.imagem-card img {
+  transition: transform 0.4s ease;
+  border-radius: 12px;
+}
+
+.imagem-card img.img-hover:hover {
+  transform: scale(1.05);
+}
+
+/* Depoimentos */
+.depoimento-card {
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 12px;
+}
+
+.depoimento-card p {
+  font-size: 0.95rem;
+}
+
+/* Blog Rennova */
+.blog-card h6 {
+  font-size: 1rem;
+}
+
+.blog-card p {
+  font-size: 0.875rem;
+}
+
+/* Folhas background (seção final) */
+.folhas-section {
+  background: url("../images/folhas.png") no-repeat center center / cover;
+  height: 120px;
+}
+
+/* Ultimos Benefícios */
+.ultimos-beneficios h6 {
+  font-size: 0.95rem;
+  color: #222;
+}
+
+/* Quantity Buttons */
+.quantity-selector input[type="number"] {
+  width: 60px;
+}
+
+.quantity-btn {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  font-size: 1rem;
+}
+
+/* Botões principais */
+.btn-primary {
+  background-color: #6a9a64;
+}
+
+.btn-primary:hover {
+  background-color: #6a9a64;
+}
+
+.btn-outline-primary {
+  color: #6a9a64;
+}
+
+.btn-outline-primary:hover {
+  background-color: #6a9a64;
+  color: #fff;
+}
+
+/* Botões secundários */
+.btn-outline-secondary:hover {
+  background-color: #6a9a64;
+}
+
+/* Paginação (se for usada em produtos.php) */
+.pagination {
+  justify-content: center;
+}
+
+.pagination .page-link {
+  color: #6a9a64;
+}
+
+.pagination .page-link:hover {
+  background-color: #6a9a64;
+  color: #fff;
+}
+
+/* Barra de busca e ordenação */
+.filtro-barra {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filtro-barra input,
+.filtro-barra select {
+  max-width: 280px;
+}
+
+
+
+.sidebar {
+      width: 200px;
+      height: 100vh;
+      background-color: #f8f9fa;
+      padding: 1rem;
+    }
+
+    .main-content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top-header {
+      height: 150px;
+      background-color: #ffffff;
+      border-bottom: 1px solid #dee2e6;
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .content-body {
+      flex-grow: 1;
+      padding: 2rem;
+      background-color: #f1f3f5;
+    }
+
+
+
+    /* Estilização do login */
+
+.login-body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Open Sans", sans-serif;
+
+  background: url("../images/back_tela.png") no-repeat center center fixed;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
