@@ -1,10 +1,12 @@
 <?php
 
-use Pecee\SimpleRouter\SimpleRouter;
-
-use App\Controllers\HomeController;
 use App\Controllers\AuthController;
+use App\Controllers\CategoryController;
 use App\Controllers\DashboardController;
+use App\Controllers\HomeController;
+use App\Controllers\ProductController;
+use App\Controllers\SubcategoryController;
+use Pecee\SimpleRouter\SimpleRouter;
 
 SimpleRouter::get('/', [HomeController::class, 'index']);
 SimpleRouter::get('/home', [HomeController::class, 'index']);
@@ -22,39 +24,25 @@ SimpleRouter::get('/pagamento/erro', [HomeController::class, 'erro']);
 // Rota para login e dashboard
 SimpleRouter::get('/login', [AuthController::class, 'login']);
 SimpleRouter::post('/login', [AuthController::class, 'authenticate']);
-SimpleRouter::get('/logout', [AuthController::class, 'logout']);
+SimpleRouter::post('/logout', [AuthController::class, 'logout']);
 
 SimpleRouter::get('/dashboard', [DashboardController::class, 'index']);
 
-
 // Rotas para categorias, subcategorias e produtos
-SimpleRouter::get('/categories', [DashboardController::class, 'categories']);   
-SimpleRouter::get('/subcategories', [DashboardController::class, 'subcategories']);
-SimpleRouter::get('/products', [DashboardController::class, 'products']);
+SimpleRouter::get('/categories', [CategoryController::class, 'index']);
+SimpleRouter::get('/categories/create', [CategoryController::class, 'create']);
+SimpleRouter::get('/categories/update/{id}', [CategoryController::class, 'update']);
+SimpleRouter::post('/categories/store', [CategoryController::class, 'store']);
+SimpleRouter::delete('/categories/delete/{id}', [CategoryController::class, 'delete']);
 
-// Formulário de cadastro e edição de produto
-SimpleRouter::get('/create-product', [DashboardController::class, 'createProduct']);
-SimpleRouter::post('/salvar-produtos', [DashboardController::class, 'storeProduct']);
+SimpleRouter::get('/subcategories', [SubcategoryController::class, 'index']);
+SimpleRouter::get('/subcategories/create', [SubcategoryController::class, 'create']);
+SimpleRouter::get('/subcategories/update/{id}', [SubcategoryController::class, 'update']);
+SimpleRouter::post('/subcategories/store', [SubcategoryController::class, 'store']);
+SimpleRouter::delete('/subcategories/delete/{id}', [SubcategoryController::class, 'delete']);
 
-SimpleRouter::get('/create-category', [DashboardController::class, 'createCategory']);
-SimpleRouter::post('/salvar-categoria', [DashboardController::class, 'storeCategory']);
-
-SimpleRouter::get('/create-subcategory', [DashboardController::class, 'createSubcategory']);
-SimpleRouter::post('/create-subcategory', [DashboardController::class, 'storeSubcategory']);   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+SimpleRouter::get('/products', [ProductController::class, 'index']);
+SimpleRouter::get('/products/create', [ProductController::class, 'create']);
+SimpleRouter::get('/products/update/{id}', [ProductController::class, 'update']);
+SimpleRouter::post('/products/store', [ProductController::class, 'store']);
+SimpleRouter::delete('/products/delete/{id}', [ProductController::class, 'delete']);

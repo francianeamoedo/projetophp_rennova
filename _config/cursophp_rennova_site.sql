@@ -47,7 +47,6 @@ CREATE TABLE `products` (
   `price_off` float DEFAULT NULL,
   `with_promo` tinyint(1) DEFAULT NULL,
   `image` char(100) DEFAULT NULL,
-  `thumbnail` char(100) DEFAULT NULL,
   `rating` float DEFAULT NULL,
   `active` tinyint(1) NOT NULL DEFAULT 1,
   `subcategory_id` int(11) NOT NULL

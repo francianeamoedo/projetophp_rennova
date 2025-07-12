@@ -1,77 +1,43 @@
 <?php
 namespace App\Controllers;
 
-class AuthController
+use App\Core\BaseController;
+
+class AuthController extends BaseController
 {
-    public function __construct()
-    {
-        $this->startSession();
-    }
-
-    protected function startSession()
-    {
-        if (session_status() === PHP_SESSION_NONE) {
-            session_start();
-        }
-    }
-
-    protected function isAuthenticated()
-    {
-        return isset($_SESSION['user']);
-    }
-
-    protected function redirectIfNotAuthenticated()
-    {
-        if (!$this->isAuthenticated()) {
-            header('Location: /login');
-            exit;
-        }
-    }
-
     public function login()
     {
         // Se já estiver logado, redireciona para o dashboard
         if ($this->isAuthenticated()) {
-            header('Location: /dashboard');
-            exit;
+            redirect('/dashboard');
         }
-        
+
         require_once __DIR__ . '/../Views/admin/login.php';
     }
 
     public function authenticate()
     {
         if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-            header('Location: /login');
-            exit;
+            redirect('/login');
         }
 
-
-
-        // Validação básica - substitua por consulta ao banco de dados
         $username = $_POST['username'] ?? '';
         $password = $_POST['password'] ?? '';
 
         if ($this->validateCredentials($username, $password)) {
-            $_SESSION['user'] = $username;
+            $_SESSION['user']          = $username;
             $_SESSION['last_activity'] = time();
-            header('Location: /dashboard');
-            exit;
+
+            redirect('/dashboard');
         }
 
-        header('Location: /login?error=invalid_credentials');
+        redirect('/login?error=invalid_credentials');
     }
 
     protected function validateCredentials($username, $password)
     {
-        // Exemplo básico - substitua por consulta ao banco de dados
-        // e verificação segura de senha (password_verify)
-        $validUsers = [
-            'admin' => password_hash('password', PASSWORD_BCRYPT)
-        ];
-
-        return isset($validUsers[$username]) && 
-               password_verify($password, $validUsers[$username]);
+        // autenticacao simples para fins de demonstração
+        return $username === 'admin' && $password === 'admin';
     }
 
     public function logout()
@@ -85,14 +51,8 @@ class AuthController
             );
         }
         session_destroy();
-        header('Location: /login');
-        exit;
-    }
 
-    public function dashboard()
-    {
-        $this->redirectIfNotAuthenticated();
-        require_once __DIR__ . '/../Views/admin/dashboard.php';
+        redirect('/login');
     }
 
 }
