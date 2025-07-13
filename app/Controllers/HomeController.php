@@ -1,11 +1,20 @@
 <?php
-
 namespace App\Controllers;
+
+use App\Models\Product;
 
 class HomeController
 {
+    private $productModel;
+
+    public function __construct()
+    {
+        $this->productModel = new Product();
+    }
+
     public function index()
     {
+        $productsWithPromo = $this->productModel->all_by_promotion(8);
         require_once __DIR__ . '/../Views/home.php';
     }
 
@@ -24,20 +33,45 @@ class HomeController
     {
         require_once __DIR__ . '/../Views/carrinho.php';
     }
+
+    public function carrinhoPost()
+    {
+        $product_id       = $_POST['product_id'] ?? null;
+        $quantity_product = isset($product_id) ? $_POST['quantity_product_' . $product_id] : 1;
+        $product_selected = null;
+
+        if ($product_id) {
+            $product_selected = $this->productModel->find($product_id);
+        }
+
+        require_once __DIR__ . '/../Views/carrinho.php';
+    }
+
     public function checkout()
     {
+        $product_id       = $_POST['product_id'] ?? null;
+        $quantity_product = isset($product_id) ? $_POST['quantity_product_' . $product_id] : 1;
+        $product_selected = null;
+
+        if ($product_id) {
+            $product_selected = $this->productModel->find($product_id);
+        }
+
         require_once __DIR__ . '/../Views/checkout.php';
     }
+
     public function checkoutProcessar()
     {
         // Lógica para processar o checkout
         // Exemplo: Redirecionar para a página de sucesso
-        header('Location: /pagamento/sucesso');
+        redirect('/pagamento/sucesso');
     }
+
     public function sucesso()
     {
         require_once __DIR__ . '/../Views/sucesso.php';
     }
+
     public function erro()
     {
         require_once __DIR__ . '/../Views/erro.php';

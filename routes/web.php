@@ -9,14 +9,14 @@ use App\Controllers\SubcategoryController;
 use Pecee\SimpleRouter\SimpleRouter;
 
 SimpleRouter::get('/', [HomeController::class, 'index']);
-SimpleRouter::get('/home', [HomeController::class, 'index']);
 
 // Rotas para produtos e carrinho
 SimpleRouter::get('/produtos', [HomeController::class, 'produtos']);
 SimpleRouter::get('/produto/{id}', [HomeController::class, 'produto'])
     ->where(['id' => '[0-9]+']);
 SimpleRouter::get('/carrinho', [HomeController::class, 'carrinho']);
-SimpleRouter::get('/checkout', [HomeController::class, 'checkout']);
+SimpleRouter::post('/carrinho', [HomeController::class, 'carrinhoPost']);
+SimpleRouter::post('/checkout', [HomeController::class, 'checkout']);
 SimpleRouter::post('/checkout/processar', [HomeController::class, 'checkoutProcessar']);
 SimpleRouter::get('/pagamento/sucesso', [HomeController::class, 'sucesso']);
 SimpleRouter::get('/pagamento/erro', [HomeController::class, 'erro']);

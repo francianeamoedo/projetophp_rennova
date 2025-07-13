@@ -68,7 +68,15 @@ body {
   height: auto;
 }
 
+
+/* Seção de Novidades (nao consigo mudar a cor do background)*/
+.novidades-section {
+  background-color: #904800;
+}
+
+
 /* Título com imagem de fundo */
+
 .titulo-bg-section {
   height: 350px;
   overflow: hidden;
@@ -158,11 +166,11 @@ body {
 }
 
 .btn-outline-primary {
-  color: #6a9a64;
+  color: #FFFFFF;
 }
 
 .btn-outline-primary:hover {
-  background-color: #6a9a64;
+  background-color: #FFFFFF;
   color: #fff;
 }
 

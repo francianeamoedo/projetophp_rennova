@@ -27,6 +27,15 @@ class Product
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 
+    public function all_by_promotion(int $limit): array
+    {
+        $sql  = "SELECT * FROM products WHERE with_promo = 1 AND active = 1 ORDER BY id DESC LIMIT :limit";
+        $stmt = $this->db->prepare($sql);
+        $stmt->bindParam(':limit', $limit, PDO::PARAM_INT);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
     public function all_by_subcategory(int $subcategory_id): array
     {
         $sql  = "SELECT * FROM products WHERE subcategory_id = :subcategory_id AND active = 1 ORDER BY id DESC";
@@ -37,7 +46,7 @@ class Product
 
     public function find(int $id): ?array
     {
-        $sql  = "SELECT * FROM products WHERE id = :id";
+        $sql  = "SELECT p.*, s.name AS subcategory_name FROM products p LEFT JOIN subcategories s ON p.subcategory_id = s.id WHERE p.id = :id";
         $stmt = $this->db->prepare($sql);
         $stmt->execute([':id' => $id]);
 

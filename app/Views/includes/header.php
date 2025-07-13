@@ -28,8 +28,9 @@
     <div class="container d-flex flex-wrap justify-content-between align-items-center">
 
       <!-- Logo -->
-      <a href="home" class="d-flex align-items-center mb-3 mb-lg-0 me-3 text-decoration-none">
-        <img src="assets/images/Logotipo.oficial_colorido.png" alt="Logo Rennova" style="height: 90px;">
+      <a href="<?php echo base_url("/"); ?>" class="d-flex align-items-center mb-3 mb-lg-0 me-3 text-decoration-none">
+        <img src="<?php echo base_url('/assets/images/Logotipo.oficial_colorido.png') ?>" alt="Logo Rennova"
+          style="height: 90px;">
       </a>
 
       <!-- Caixa de pesquisa -->
@@ -47,7 +48,7 @@
           </a>
         </div>
         <div class="text-center">
-          <a href="carrinho" role="button" class="btn btn-sm">
+          <a href="<?php echo base_url("/carrinho"); ?>" role="button" class="btn btn-sm">
             <i class="bi bi-cart fs-5"></i><br />
             <span class="fs-6">Carrinho</span>
           </a>
@@ -63,7 +64,7 @@
 
     <!-- Menu de navegação -->
     <nav class="nav justify-content-center border-top py-2">
-      <a class="nav-link text-dark fw-semibold" href="produtos">PRODUTOS</a>
+      <a class="nav-link text-dark fw-semibold" href="<?php echo base_url("/produtos"); ?>">PRODUTOS</a>
       <a class="nav-link text-dark fw-semibold" href="#">NOVIDADES</a>
       <a class="nav-link text-dark fw-semibold" href="#">PROMOÇÕES</a>
       <a class="nav-link text-dark fw-semibold" href="#">PRESENTES & OFERTAS</a>

@@ -5,15 +5,15 @@
 
     <!-- COLUNA 1: Imagens pequenas -->
     <div class="col-md-2 d-flex flex-column gap-3">
-      <img src="assets/images/product1.png" class="img-fluid rounded border" alt="Miniatura 1">
-      <img src="assets/images/product2.png" class="img-fluid rounded border" alt="Miniatura 2">
-      <img src="assets/images/product3.png" class="img-fluid rounded border" alt="Miniatura 3">
-      <img src="assets/images/product4.png" class="img-fluid rounded border" alt="Miniatura 4">
+      <img src="assets/images/thumbnail1.png" class="img-fluid rounded border" alt="Miniatura 1">
+      <img src="assets/images/thumbnail2.png" class="img-fluid rounded border" alt="Miniatura 2">
+      <img src="assets/images/thumbnail2.png" class="img-fluid rounded border" alt="Miniatura 3">
+      <img src="assets/images/thumbnail2.png" class="img-fluid rounded border" alt="Miniatura 4">
     </div>
 
     <!-- COLUNA 2: Imagem principal -->
     <div class="col-md-5">
-      <img src="assets/images/product1.png" class="img-fluid rounded shadow-sm" alt="Produto principal">
+      <img src="assets/images/Creme-Facial-acido-Hialuronico.png" class="img-fluid rounded shadow-sm" alt="Produto principal">
     </div>
 
     <!-- COLUNA 3: Informações -->
@@ -22,9 +22,10 @@
       <h2 class="fw-bold">Creme Facial com Ácido Hialurônico SPF 50, 40g</h2>
 
       <!-- Avaliações -->
-      <div class="mb-3">
-        ⭐⭐⭐⭐⭐ (123 avaliações)
-      </div>
+       <div class="mb-2">
+              <span class="text-warning fs-4">★★★★★</span>
+              <small class="text-muted ms-2">(<?php ?> 7,593 Reviews)</small>
+            </div>
 
       <!-- Descrição -->
       <p class="text-muted">

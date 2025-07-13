@@ -14,7 +14,7 @@
       <h5>Resumo do Pedido</h5>
       <ul class="list-unstyled small mb-4">
         <li><strong>Número do Pedido:</strong> #<?php echo rand(100000, 999999); ?></li>
-        <li><strong>Data:</strong> <?php echo date('d/m/Y'); ?></li>
+        <li><strong>Data:</strong>                                                                     <?php echo date('d/m/Y'); ?></li>
         <li><strong>Endereço:</strong> South Meruya Street, Malang City</li>
         <li><strong>Pagamento:</strong> Cartão de Crédito **** 2219</li>
       </ul>
@@ -45,7 +45,7 @@
       </div>
     </div>
 
-    <a href="index.php" class="btn btn-primary mt-4">Continuar Comprando</a>
+    <a href="<?php echo base_url("/produtos") ?>" class="btn btn-primary mt-4">Continuar Comprando</a>
   </div>
 </div>
 

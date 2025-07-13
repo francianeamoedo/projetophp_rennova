@@ -22,21 +22,31 @@
         <div class="card-header bg-white border-0">
           <strong>PRODUCT ORDERED</strong>
         </div>
+        <?php if (isset($product_selected)): ?>
+        <div class="p-3 border-bottom">
+          <div class="d-flex align-items-start gap-3">
+            <div class="flex-shrink-0">
+              <?php $alt_produto = "Produto " . htmlspecialchars($product_selected['name']); ?>
 
-        <?php for ($i = 1; $i <= 4; $i++): ?>
-          <div class="p-3 border-bottom">
-            <div class="d-flex align-items-start gap-3">
-              <div class="flex-shrink-0">
-                <img src="assets/images/produto_exemplo.jpg" class="img-fluid rounded" style="width: 60px;" alt="Produto <?php echo $i; ?>">
-              </div>
-              <div class="flex-grow-1">
-                <p class="mb-1 text-muted small">Serum/Ampoule, Dry Skin, Oily Skin, Sensitive Skin</p>
-                <strong>Nome do Produto <?php echo $i; ?> 30ml</strong>
-                <p class="mb-0"><small>1 item</small> – <strong class="text-danger">€<?php echo number_format(14.99 + $i * 2, 2); ?></strong></p>
-              </div>
+              <img src="<?php echo base_url("/assets" . $product_selected['image']); ?>" class="img-fluid rounded"
+                style="width: 60px;" alt="<?php echo $alt_produto; ?>">
+            </div>
+            <div class="flex-grow-1">
+              <p class="mb-1 text-muted small"><?php echo htmlspecialchars($product_selected['subcategory_name']); ?>
+              </p>
+              <strong><?php echo htmlspecialchars($product_selected['name']); ?></strong>
+              <p class="mb-0"><small><?php echo $quantity_product; ?> item</small> – <strong
+                  class="text-danger">€<?php echo $product_selected['with_promo'] ? number_format($product_selected['price_off'] * $quantity_product, 2) : number_format($product_selected['price'] * $quantity_product, 2); ?></strong>
+              </p>
             </div>
           </div>
-        <?php endfor; ?>
+        </div>
+        <?php else: ?>
+        <div class="p-3 text-center">
+          <p class="text-muted">No products selected.</p>
+          <a href="<?php echo base_url('products'); ?>" class="btn btn-primary">Select Products</a>
+        </div>
+        <?php endif; ?>
       </div>
 
       <!-- Pagamentos -->
@@ -147,10 +157,11 @@
       </div>
 
       <!-- Botão de Pagamento -->
-      <button class="btn btn-success w-100 btn-lg">FINALIZAR PEDIDO (€94.30)</button>
+      <form method="post" action="<?php echo base_url('/checkout/processar'); ?>">
+        <button type="submit" class="btn btn-success w-100 btn-lg">FINALIZAR PEDIDO (€94.30)</button>
+      </form>
     </div>
   </div>
 </div>
 
 <?php include 'includes/footer.php'; ?>
-
