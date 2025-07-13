@@ -20,7 +20,7 @@
       <!-- Produtos -->
       <div class="card mb-4 p-0">
         <div class="card-header bg-white border-0">
-          <strong>PRODUCT ORDERED</strong>
+          <strong>PRODUTOS</strong>
         </div>
         <?php if (isset($product_selected)): ?>
         <div class="p-3 border-bottom">
@@ -55,7 +55,7 @@
 
         <form>
           <div class="mb-3">
-            <label class="form-label">Select Payment Method</label>
+            <label class="form-label">Selecione a forma de pagamento</label>
             <div class="btn-group d-flex" role="group">
               <button type="button" class="btn btn-outline-secondary w-100">MULTIBANCO</button>
               <button type="button" class="btn btn-outline-secondary w-100">MBWAY</button>
@@ -65,18 +65,18 @@
           </div>
 
           <div class="mb-3">
-            <label class="form-label">Card Holder Name</label>
-            <input type="text" class="form-control" placeholder="Enter your name">
+            <label class="form-label">Nome do Titular</label>
+            <input type="text" class="form-control" placeholder="Insira o nome do titular do cartão">
           </div>
 
           <div class="mb-3">
-            <label class="form-label">Credit Card Number</label>
+            <label class="form-label">Número do Cartão de Crédito</label>
             <input type="text" class="form-control" placeholder="0000 0000 0000 0000">
           </div>
 
           <div class="row">
             <div class="col-md-6 mb-3">
-              <label class="form-label">Expiry Date</label>
+              <label class="form-label">Data de Expiração</label>
               <input type="text" class="form-control" placeholder="MM/YY">
             </div>
             <div class="col-md-6 mb-3">
@@ -88,7 +88,7 @@
           <div class="form-check mb-3">
             <input class="form-check-input" type="checkbox" id="privacyCheck">
             <label class="form-check-label" for="privacyCheck">
-              I accept Terms and Conditions and Privacy Statement
+              Li e concordo que a Rennova processe minhas informações de acordo com a Política de Pricavidade and Gestão de Cookies. 
             </label>
           </div>
 
@@ -101,7 +101,7 @@
     <div class="col-md-4">
       <!-- Método de Pagamento Selecionado -->
       <div class="card mb-4 p-3">
-        <h6>PAYMENT</h6>
+        <h6>PAGAMENTO</h6>
         <div class="d-flex align-items-center gap-2">
           <i class="bi bi-credit-card-2-front-fill text-primary fs-4"></i>
           <div>
@@ -113,7 +113,7 @@
         <div class="d-flex align-items-center gap-2">
           <i class="bi bi-wallet2 text-dark fs-5"></i>
           <div>
-            <strong>Cash on Delivery</strong>
+            <strong>Pagamento na Entrega</strong>
           </div>
         </div>
       </div>
@@ -128,19 +128,19 @@
           $total_price     = $subtotal_price + $estimated_taxes;
       ?>
       <div class="card p-3 mb-4">
-        <h6>SUMMARY</h6>
+        <h6>RESUMO</h6>
         <ul class="list-unstyled mb-2">
           <li class="d-flex justify-content-between">
             <span>Subtotal</span><span>€<?php echo $subtotal_price; ?></span>
           </li>
           <li class="d-flex justify-content-between">
-            <span>Delivery Fee</span><span><s class="text-muted">€5.00</s> <span class="text-success">Free</span></span>
+            <span>Entrega</span><span><s class="text-muted">€5.00</s></span>
           </li>
           <li class="d-flex justify-content-between">
-            <span>Voucher Discount</span><span>-€0.00</span>
+            <span>Voucher</span><span>- €0.00</span>
           </li>
           <li class="d-flex justify-content-between">
-            <span>Estimated Taxes</span><span>€<?php echo number_format($estimated_taxes, 2); ?></span>
+            <span>IVA</span><span>€<?php echo number_format($estimated_taxes, 2); ?></span>
           </li>
         </ul>
         <hr>
@@ -151,15 +151,15 @@
 
       <!-- Voucher -->
       <div class="card p-3 mb-4">
-        <h6>Voucher Discount</h6>
+        <h6>Voucher</h6>
         <form>
           <div class="input-group mb-2">
             <input type="text" class="form-control" value="NJKDISCS">
-            <button class="btn btn-dark" type="button">Apply Promo</button>
+            <button class="btn btn-dark" type="button">Aplicar</button>
           </div>
           <div class="alert alert-success small mb-0">
             <i class="bi bi-check-circle-fill me-1"></i>
-            Voucher Applied! Free shipping.
+            Voucher Aplicado!
           </div>
         </form>
       </div>

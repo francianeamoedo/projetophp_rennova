@@ -65,55 +65,63 @@
         </div>
 
         <!-- GRID DE PRODUTOS -->
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
-  <?php for ($i = 1; $i <= 8; $i++): ?>
-    <div class="col">
-      <div class="card product-card h-100 shadow-sm">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+          <?php foreach ($productsActives as $product): ?>
+          <div class="col">
+            <div class="card product-card h-100 shadow-sm">
 
-        <a href="produto/<?php echo $i; ?>" class="text-decoration-none">
-          <img src="assets/images/serum-skin-facial.png" class="card-img-top" alt="Produto <?php echo $i; ?>">
-        </a>
+              <?php $altImage = "Produto " . htmlspecialchars($product['name']); ?>
 
-        <div class="card-body d-flex flex-column">
+              <a href="<?php echo base_url("/produto/" . $product['id']); ?>" class="text-decoration-none">
+                <img src="<?php echo base_url("/assets" . $product['image']); ?>" class="card-img-top"
+                  alt="<?php echo $altImage; ?>">
+              </a>
 
-          <div class="mb-2">
-            <span class="text-warning">★★★★☆</span>
-            <small class="text-muted ms-2">(<?php echo rand(10, 50); ?> avaliações)</small>
+              <div class="card-body d-flex flex-column">
+
+                <div class="mb-2">
+                  <span class="text-warning">★★★★☆</span>
+                  <small class="text-muted ms-2">(<?php echo rand(10, 50); ?> avaliações)</small>
+                </div>
+
+                <h5 class="card-title">
+                  <?php echo htmlspecialchars($product['name']); ?>
+                </h5>
+
+                <div class="d-flex align-items-baseline gap-2 mb-3">
+                  <?php if ($product['with_promo'] && $product['price_off'] > 0): ?>
+                  <p class="text-muted mb-0"><s>€<?php echo number_format($product['price'], 2); ?></s></p>
+                  <p class="fw-bold text-danger mb-0">€<?php echo number_format($product['price_off'], 2); ?></p>
+                  <?php else: ?>
+                  <p class="fw-bold mb-0">€<?php echo number_format($product['price'], 2); ?></p>
+                  <?php endif; ?>
+                </div>
+
+                <form action="carrinho" method="POST">
+
+                  <div class="quantity-selector d-flex justify-content-center align-items-center gap-2 mb-3"
+                    data-product-id="<?php echo $product['id']; ?>">
+                    <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button" data-action="decrement"
+                      data-product-id="<?php echo $product['id']; ?>">-</button>
+
+                    <input id="quantity_product_<?php echo $product['id']; ?>"
+                      name="quantity_product_<?php echo $product['id']; ?>" type="number"
+                      class="form-control text-center quantity-input" value="1" min="1"
+                      data-product-id="<?php echo $product['id']; ?>" style="width: 60px;">
+
+                    <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button" data-action="increment"
+                      data-product-id="<?php echo $product['id']; ?>">+</button>
+                  </div>
+
+                  <input type="hidden" name="product_id" value="<?php echo $product['id']; ?>">
+                  <button type="submit" class="btn btn-primary w-100">Comprar agora</button>
+                </form>
+
+              </div>
+            </div>
           </div>
-
-          <h5 class="card-title">
-            Creme Facial com Ácido Hialurônico SPF 50, 40g <?php echo $i; ?>
-          </h5>
-
-          <div class="d-flex align-items-baseline gap-2 mb-3">
-            <p class="text-muted mb-0"><s>€49,99</s></p>
-            <p class="fw-bold text-danger mb-0">€29,99</p>
-          </div>
-
-          <div class="quantity-selector d-flex justify-content-center align-items-center gap-2 mb-3"
-            data-product-index="<?php echo $i; ?>">
-            <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button"
-              data-action="decrement" data-product-index="<?php echo $i; ?>">-</button>
-
-            <input id="quantity-input-<?php echo $i; ?>" 
-              type="number" class="form-control text-center quantity-input"
-              value="1" min="1" data-product-index="<?php echo $i; ?>" style="width: 60px;">
-
-            <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button"
-              data-action="increment" data-product-index="<?php echo $i; ?>">+</button>
-          </div>
-
-          <form action="carrinho" method="POST" class="mt-auto">
-            <input type="hidden" name="product_id" value="<?php echo $i; ?>">
-            <input type="hidden" name="quantity" id="form-quantity-<?php echo $i; ?>" value="1">
-            <button type="submit" class="btn btn-primary w-100">Comprar agora</button>
-          </form>
-
+          <?php endforeach; ?>
         </div>
-      </div>
-    </div>
-  <?php endfor; ?>
-</div>
 
         <!-- PAGINAÇÃO -->
         <nav class="mt-5">

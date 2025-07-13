@@ -4,16 +4,16 @@
   <div class="row g-4">
 
     <!-- COLUNA 1: Imagens pequenas -->
-    <div class="col-md-2 d-flex flex-column gap-3">
-      <img src="assets/images/thumbnail1.png" class="img-fluid rounded border" alt="Miniatura 1">
-      <img src="assets/images/thumbnail2.png" class="img-fluid rounded border" alt="Miniatura 2">
-      <img src="assets/images/thumbnail2.png" class="img-fluid rounded border" alt="Miniatura 3">
-      <img src="assets/images/thumbnail2.png" class="img-fluid rounded border" alt="Miniatura 4">
+    <div class="col-md-1 d-flex flex-column gap-3">
+      <img src="<?php echo base_url("/assets/images/thumbnail1.png")?>" alt="Miniatura 1" class="img-thumbnail">
+      <img src="<?php echo base_url("/assets/images/thumbnail2.png")?>" alt="Miniatura 2" class="img-thumbnail">
+      <img src="<?php echo base_url("/assets/images/thumbnail2.png")?>" alt="Miniatura 3" class="img-thumbnail">
+      <img src="<?php echo base_url("/assets/images/thumbnail2.png")?>" alt="Miniatura 4" class="img-thumbnail">
     </div>
 
     <!-- COLUNA 2: Imagem principal -->
     <div class="col-md-5">
-      <img src="assets/images/Creme-Facial-acido-Hialuronico.png" class="img-fluid rounded shadow-sm" alt="Produto principal">
+      <img src="<?php echo base_url("/assets/images/Creme-Facial-acido-Hialuronico.png")?>" alt="Produto principal" class="img-fluid rounded shadow-sm">
     </div>
 
     <!-- COLUNA 3: Informações -->
@@ -80,12 +80,9 @@
 </section>
 <section class="container py-5">
 
-  <!-- Barra de pesquisa e ordenação - alinhada com as colunas abaixo -->
+  <!-- Barra de ordenação -->
   <div class="row mb-4">
-    <div class="col-md-4 d-flex gap-2 flex-wrap align-items-center">
-      <input type="text" class="form-control" placeholder="Pesquisar produtos..."
-        style="min-width: 0; flex-grow: 1; max-width: 100%;">
-    </div>
+
     <div class="col-md-8 d-flex justify-content-start justify-content-md-end gap-2 flex-wrap">
       <select class="form-select" style="max-width: 200px; min-width: 200px;">
         <option selected>Ordenar por</option>
@@ -172,9 +169,9 @@
 
         <!-- Imagens abaixo da mensagem -->
         <div class="d-flex gap-3 mb-3">
-          <img src="assets/images/Image.png" alt="Imagem 1" class="img-thumbnail"
+          <img src="<?php echo base_url("/assets/images/Image.png")?>" alt="Imagem 5" class="img-thumbnail"
             style="width: 80px; height: 80px; object-fit: cover;">
-          <img src="assets/images/Image.png" alt="Imagem 2" class="img-thumbnail"
+          <img src="<?php echo base_url("/assets/images/Image.png")?>" alt="Imagem 5" class="img-thumbnail"
             style="width: 80px; height: 80px; object-fit: cover;">
         </div>
 
@@ -201,9 +198,9 @@
         <p>“Gostei bastante, textura leve e rápida absorção. Recomendo!”</p>
 
         <div class="d-flex gap-3 mb-3">
-          <img src="assets/images/Image.png" alt="Imagem 3" class="img-thumbnail"
+          <img src="<?php echo base_url("/assets/images/Image.png")?>" alt="Imagem 5" class="img-thumbnail"
             style="width: 80px; height: 80px; object-fit: cover;">
-          <img src="assets/images/Image.png" alt="Imagem 4" class="img-thumbnail"
+          <img src="<?php echo base_url("/assets/images/Image.png")?>" alt="Imagem 5" class="img-thumbnail"
             style="width: 80px; height: 80px; object-fit: cover;">
         </div>
 
@@ -230,9 +227,9 @@
         <p>“O produto é bom, mas senti que a fragrância poderia ser mais suave.”</p>
 
         <div class="d-flex gap-3 mb-3">
-          <img src="assets/images/Image.png" alt="Imagem 5" class="img-thumbnail"
+          <img src="<?php echo base_url("/assets/images/Image.png")?>" alt="Imagem 5" class="img-thumbnail"
             style="width: 80px; height: 80px; object-fit: cover;">
-          <img src="assets/images/Image.png" alt="Imagem 6" class="img-thumbnail"
+          <img src="<?php echo base_url("/assets/images/Image.png")?>" alt="Imagem 5" class="img-thumbnail"
             style="width: 80px; height: 80px; object-fit: cover;">
         </div>
 
@@ -262,7 +259,7 @@
       
       <div class="col">
         <div class="card product-card h-100 shadow-sm">
-          <img src="assets/images/product11.png" class="card-img-top"
+          <img src="<?php echo base_url("/assets/images/product11.png")?>" class="card-img-top"
             alt="☀️✨Kit Proteção e Revitalização FPS 50 + Ácido Hialurônico                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <?php echo $i; ?>">
           <div class="card-body d-flex flex-column">
 
@@ -284,14 +281,14 @@
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
             </div>
 
-            <a href="#" class="btn btn-primary mt-auto">Comprar agora</a>
+            <a href="#" class="btn btn-primary mt-auto">Comprar Agora</a>
 
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card product-card h-100 shadow-sm">
-          <img src="assets/images/product7.png" class="card-img-top"
+          <img src="<?php echo base_url("/assets/images/product7.png")?>" class="card-img-top"
             alt="🌿✨ Kit Limpeza Profunda Detox e Reparador Revitalizante<?php echo $i; ?>">
           <div class="card-body d-flex flex-column">
 
@@ -313,7 +310,7 @@
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
             </div>
 
-            <a href="#" class="btn btn-primary mt-auto">Comprar agora</a>
+            <a href="#" class="btn btn-primary mt-auto">Comprar Agora</a>
 
           </div>
         </div>
@@ -322,7 +319,7 @@
 
       <div class="col">
         <div class="card product-card h-100 shadow-sm">
-          <img src="assets/images/product10.png" class="card-img-top"
+          <img src="<?php echo base_url("/assets/images/product10.png")?>"" class="card-img-top"
             alt="✨💖 Kit Rejuvenescimento e Tratamento Avançado Firmador Intensivo<?php echo $i; ?>">
           <div class="card-body d-flex flex-column">
 
@@ -344,7 +341,7 @@
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
             </div>
 
-            <a href="#" class="btn btn-primary mt-auto">Comprar agora</a>
+            <a href="#" class="btn btn-primary mt-auto">Comprar Agora</a>
 
           </div>
         </div>
@@ -354,7 +351,7 @@
 
       <div class="col">
         <div class="card product-card h-100 shadow-sm">
-          <img src="assets/images/product12.png" class="card-img-top"
+          <img src="<?php echo base_url("/assets/images/product12.png")?>" class="card-img-top"
             alt="💧✨ Ultra Hidratação Revitalizante e Nutrição Profunda<?php echo $i; ?>">
           <div class="card-body d-flex flex-column">
 
@@ -376,7 +373,7 @@
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
             </div>
 
-            <a href="#" class="btn btn-primary mt-auto">Comprar agora</a>
+            <a href="#" class="btn btn-primary mt-auto">Comprar Agora</a>
 
           </div>
         </div>

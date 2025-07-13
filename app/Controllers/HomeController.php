@@ -20,13 +20,16 @@ class HomeController
 
     public function produtos()
     {
+        $productsActives = $this->productModel->all_actives();
         require_once __DIR__ . '/../Views/produtos.php';
     }
+
     public function produto($id)
     {
-        // Aqui você pode carregar o produto com base no ID
-        // Exemplo: buscar no banco de dados ou em um array de produtos
-        // Para fins de exemplo, vamos apenas simular um produto
+        if ($id) {
+            $product = $this->productModel->find($id);
+        }
+
         require_once __DIR__ . '/../Views/creme_facial_com_acido_hialuronico.php';
     }
     public function carrinho()

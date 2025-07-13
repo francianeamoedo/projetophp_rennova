@@ -123,11 +123,11 @@
     </div>
 
     <div class="row row-cols-1 row-cols-md-4 g-4 mb-4">
-      
+
       <div class="col">
         <div class="card product-card h-100 shadow-sm">
           <img src="assets/images/product11.png" class="card-img-top"
-            alt="☀️✨Kit Proteção e Revitalização FPS 50 + Ácido Hialurônico                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <?php echo $i; ?>">
+            alt="☀️✨Kit Proteção e Revitalização FPS 50 + Ácido Hialurônico                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <?php echo $i; ?>">
           <div class="card-body d-flex flex-column">
 
             <div class="mb-2">
@@ -250,62 +250,38 @@
   </div>
 </section>
 
-    <script type="text/javascript">
-    function formatEuro(value) {
-      return '€' + value.toFixed(2).replace('.', ',');
-    }
+<script type="text/javascript">
+function formatEuro(value) {
+  return '€' + value.toFixed(2).replace('.', ',');
+}
 
-    function updateResumoCompra() {
-      let subtotal = 0;
-      const taxa = 9.34;
-      const desconto = 0;
+function updateResumoCompra() {
+  let subtotal = 0;
+  const taxa = 9.34;
+  const desconto = 0;
 
-      document.querySelectorAll('.product-item').forEach(item => {
-        const price = parseFloat(item.dataset.price);
-        const input = item.querySelector('.quantity-input');
-        const quantity = parseInt(input.value) || 1;
+  document.querySelectorAll('.product-item').forEach(item => {
+    const price = parseFloat(item.dataset.price);
+    const input = item.querySelector('.quantity-input');
+    const quantity = parseInt(input.value) || 1;
 
-        subtotal += price * quantity;
-      });
+    subtotal += price * quantity;
+  });
 
-      const total = subtotal + taxa - desconto;
+  const total = subtotal + taxa - desconto;
 
-      document.getElementById('subtotal').textContent = formatEuro(subtotal);
-      document.getElementById('voucher').textContent = '- ' + formatEuro(desconto);
-      document.getElementById('total').textContent = formatEuro(total);
-      document.getElementById('checkout-btn').textContent = `Checkout (${formatEuro(total)})`;
-    }
+  document.getElementById('subtotal').textContent = formatEuro(subtotal);
+  document.getElementById('voucher').textContent = '- ' + formatEuro(desconto);
+  document.getElementById('total').textContent = formatEuro(total);
+  document.getElementById('checkout-btn').textContent = `Checkout (${formatEuro(total)})`;
+}
 
-    document.querySelectorAll('.quantity-input').forEach(input => {
-      input.addEventListener('change', updateResumoCompra);
-      input.addEventListener('input', updateResumoCompra);
-    });
+document.querySelectorAll('.quantity-input').forEach(input => {
+  input.addEventListener('change', updateResumoCompra);
+  input.addEventListener('input', updateResumoCompra);
+});
 
-    document.querySelectorAll('.quantity-btn').forEach(button => {
+updateResumoCompra();
+</script>
 
-      button.addEventListener('click', function() {
-        const productId = this.dataset.productId;
-        if (!productId) return;
-
-        const action = this.dataset.action;
-        const input = document.querySelector(`#quantity_product_${productId}`);
-
-        if (!input) return;
-
-        let currentValue = parseInt(input.value, 10) || 1;
-
-        if (action === 'increment') {
-          currentValue += 1;
-        } else if (action === 'decrement' && currentValue > 1) {
-          currentValue -= 1;
-        }
-
-        input.value = currentValue;
-        input.dispatchEvent(new Event('change'));
-      });
-    });
-
-    updateResumoCompra();
-    </script>
-
-    <?php include 'includes/footer.php'; ?>
+<?php include 'includes/footer.php'; ?>
