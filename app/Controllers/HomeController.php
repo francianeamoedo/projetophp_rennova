@@ -63,12 +63,26 @@ class HomeController
     public function checkoutProcessar()
     {
         // Lógica para processar o checkout
-        // Exemplo: Redirecionar para a página de sucesso
+        $_SESSION['checkout_data'] = [
+            'product_id' => $_POST['product_id'] ?? null,
+            'quantity'   => $_POST['quantity'] ?? 1,
+        ];
+        $_SESSION['checkout_data']['total_price'] = $_POST['total_price'] ?? 0;
         redirect('/pagamento/sucesso');
     }
 
     public function sucesso()
     {
+        $product_id  = $_SESSION['checkout_data']['product_id'] ?? null;
+        $quantity    = $_SESSION['checkout_data']['quantity'] ?? 1;
+        $total_price = $_SESSION['checkout_data']['total_price'] ?? 0;
+
+        unset($_SESSION['checkout_data']);
+
+        if ($product_id) {
+            $product_selected = $this->productModel->find($product_id);
+        }
+
         require_once __DIR__ . '/../Views/sucesso.php';
     }
 

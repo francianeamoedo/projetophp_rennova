@@ -172,9 +172,9 @@
 
         <!-- Imagens abaixo da mensagem -->
         <div class="d-flex gap-3 mb-3">
-          <img src="assets/images/avaliacao_img1.jpg" alt="Imagem 1" class="img-thumbnail"
+          <img src="assets/images/Image.png" alt="Imagem 1" class="img-thumbnail"
             style="width: 80px; height: 80px; object-fit: cover;">
-          <img src="assets/images/avaliacao_img2.jpg" alt="Imagem 2" class="img-thumbnail"
+          <img src="assets/images/Image.png" alt="Imagem 2" class="img-thumbnail"
             style="width: 80px; height: 80px; object-fit: cover;">
         </div>
 
@@ -201,9 +201,9 @@
         <p>“Gostei bastante, textura leve e rápida absorção. Recomendo!”</p>
 
         <div class="d-flex gap-3 mb-3">
-          <img src="assets/images/avaliacao_img3.jpg" alt="Imagem 3" class="img-thumbnail"
+          <img src="assets/images/Image.png" alt="Imagem 3" class="img-thumbnail"
             style="width: 80px; height: 80px; object-fit: cover;">
-          <img src="assets/images/avaliacao_img4.jpg" alt="Imagem 4" class="img-thumbnail"
+          <img src="assets/images/Image.png" alt="Imagem 4" class="img-thumbnail"
             style="width: 80px; height: 80px; object-fit: cover;">
         </div>
 
@@ -230,9 +230,9 @@
         <p>“O produto é bom, mas senti que a fragrância poderia ser mais suave.”</p>
 
         <div class="d-flex gap-3 mb-3">
-          <img src="assets/images/avaliacao_img5.jpg" alt="Imagem 5" class="img-thumbnail"
+          <img src="assets/images/Image.png" alt="Imagem 5" class="img-thumbnail"
             style="width: 80px; height: 80px; object-fit: cover;">
-          <img src="assets/images/avaliacao_img6.jpg" alt="Imagem 6" class="img-thumbnail"
+          <img src="assets/images/Image.png" alt="Imagem 6" class="img-thumbnail"
             style="width: 80px; height: 80px; object-fit: cover;">
         </div>
 
@@ -251,154 +251,149 @@
   </div>
 </section>
 
-<section class="container my-5">
-  <h3 class="text-center mb-3">Destaques da Semana</h3>
-  <p class="text-center text-muted mb-4">Confira nossos produtos selecionados com ofertas imperdíveis</p>
+<section class="destque-semana py-5">
+  <div class="container">
 
-  <div class="scroll-wrapper position-relative">
-    <div class="row row-cols-1 row-cols-md-4 g-4 overflow-auto flex-nowrap flex-row" style="display: flex;">
-      <!-- Card 1 -->
-      <div class="col" style="flex: 0 0 auto; min-width: 250px;">
-        <div class="card product-card h-100 text-center p-3 shadow-sm">
-          <img src="assets/images/product1.png" class="card-img-top" alt="Produto 1">
+    <div class="text-center mb-5">
+      <h3 class="fw-bold">Destaques da Semana</h3>
+    </div>
 
-          <div class="card-body">
+    <div class="row row-cols-1 row-cols-md-4 g-4 mb-4">
+      
+      <div class="col">
+        <div class="card product-card h-100 shadow-sm">
+          <img src="assets/images/product11.png" class="card-img-top"
+            alt="☀️✨Kit Proteção e Revitalização FPS 50 + Ácido Hialurônico                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <?php echo $i; ?>">
+          <div class="card-body d-flex flex-column">
+
             <div class="mb-2">
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-half text-warning"></i>
-              <i class="bi bi-star text-warning"></i>
-              <span class="small text-muted">(23 avaliações)</span>
+              <span class="text-warning fs-4">★★★★★</span>
+              <small class="text-muted ms-2">(<?php echo rand(10, 5100); ?> avaliações)</small>
             </div>
 
-            <h5 class="card-title">Creme Facial Rennova</h5>
+            <h5 class="card-title">☀️✨Kit Proteção e Revitalização FPS 50 + Ácido Hialurônico</h5>
 
-            <div class="price d-flex justify-content-center align-items-center gap-2 mb-2">
-              <span class="text-muted text-decoration-line-through">€54,99</span>
-              <span class="fw-bold text-danger">€31,99</span>
+            <div class="d-flex align-items-baseline gap-2 mb-3">
+              <p class="text-muted mb-0"><s>€129,99</s></p>
+              <p class="fw-bold text-danger mb-0">€114,99</p>
             </div>
 
-            <div class="d-flex align-items-center justify-content-center quantity-selector mb-3">
+            <div class="quantity-selector d-flex justify-content-center align-items-center gap-2 mb-3">
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">-</button>
-              <input type="number" class="form-control text-center mx-2" value="1" min="1" style="width: 60px;">
+              <input type="number" class="form-control text-center quantity-input" value="1" min="1">
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
             </div>
 
-            <button class="btn btn-primary w-100">Comprar Agora</button>
+            <a href="#" class="btn btn-primary mt-auto">Comprar agora</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card product-card h-100 shadow-sm">
+          <img src="assets/images/product7.png" class="card-img-top"
+            alt="🌿✨ Kit Limpeza Profunda Detox e Reparador Revitalizante<?php echo $i; ?>">
+          <div class="card-body d-flex flex-column">
+
+            <div class="mb-2">
+              <span class="text-warning fs-4">★★★★★</span>
+              <small class="text-muted ms-2">(<?php echo rand(10, 5100); ?> avaliações)</small>
+            </div>
+
+            <h5 class="card-title">🌿✨ Kit Limpeza Profunda Detox e Reparador Revitalizante</h5>
+
+            <div class="d-flex align-items-baseline gap-2 mb-3">
+              <p class="text-muted mb-0"><s>€204,99</s></p>
+              <p class="fw-bold text-danger mb-0">€179,99</p>
+            </div>
+
+            <div class="quantity-selector d-flex justify-content-center align-items-center gap-2 mb-3">
+              <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">-</button>
+              <input type="number" class="form-control text-center quantity-input" value="1" min="1">
+              <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
+            </div>
+
+            <a href="#" class="btn btn-primary mt-auto">Comprar agora</a>
+
           </div>
         </div>
       </div>
 
-      <!-- Card 2 -->
-      <div class="col" style="flex: 0 0 auto; min-width: 250px;">
-        <div class="card product-card h-100 text-center p-3 shadow-sm">
-          <img src="assets/images/product2.png" class="card-img-top" alt="Produto 2">
 
-          <div class="card-body">
+      <div class="col">
+        <div class="card product-card h-100 shadow-sm">
+          <img src="assets/images/product10.png" class="card-img-top"
+            alt="✨💖 Kit Rejuvenescimento e Tratamento Avançado Firmador Intensivo<?php echo $i; ?>">
+          <div class="card-body d-flex flex-column">
+
             <div class="mb-2">
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star text-warning"></i>
-              <span class="small text-muted">(45 avaliações)</span>
+              <span class="text-warning fs-4">★★★★★</span>
+              <small class="text-muted ms-2">(<?php echo rand(10, 5100); ?> avaliações)</small>
             </div>
 
-            <h5 class="card-title">Sérum Iluminador</h5>
+            <h5 class="card-title">✨💖 Kit Rejuvenescimento e Tratamento Firmador Intensivo</h5>
 
-            <div class="price d-flex justify-content-center align-items-center gap-2 mb-2">
-              <span class="text-muted text-decoration-line-through">€39,99</span>
-              <span class="fw-bold text-danger">€24,99</span>
+            <div class="d-flex align-items-baseline gap-2 mb-3">
+              <p class="text-muted mb-0"><s>€264,99</s></p>
+              <p class="fw-bold text-danger mb-0">€244,99</p>
             </div>
 
-            <div class="d-flex align-items-center justify-content-center quantity-selector mb-3">
+            <div class="quantity-selector d-flex justify-content-center align-items-center gap-2 mb-3">
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">-</button>
-              <input type="number" class="form-control text-center mx-2" value="1" min="1" style="width: 60px;">
+              <input type="number" class="form-control text-center quantity-input" value="1" min="1">
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
             </div>
 
-            <button class="btn btn-primary w-100">Comprar Agora</button>
+            <a href="#" class="btn btn-primary mt-auto">Comprar agora</a>
+
           </div>
         </div>
       </div>
 
-      <!-- Card 3 -->
-      <div class="col" style="flex: 0 0 auto; min-width: 250px;">
-        <div class="card product-card h-100 text-center p-3 shadow-sm">
-          <img src="assets/images/product3.png" class="card-img-top" alt="Produto 3">
 
-          <div class="card-body">
+
+      <div class="col">
+        <div class="card product-card h-100 shadow-sm">
+          <img src="assets/images/product12.png" class="card-img-top"
+            alt="💧✨ Ultra Hidratação Revitalizante e Nutrição Profunda<?php echo $i; ?>">
+          <div class="card-body d-flex flex-column">
+
             <div class="mb-2">
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star text-warning"></i>
-              <i class="bi bi-star text-warning"></i>
-              <span class="small text-muted">(12 avaliações)</span>
+              <span class="text-warning fs-4">★★★★★</span>
+              <small class="text-muted ms-2">(<?php echo rand(10, 5100); ?> avaliações)</small>
             </div>
 
-            <h5 class="card-title">Loção Hidratante</h5>
+            <h5 class="card-title">💧✨ Ultra Hidratação Revitalizante e Nutrição Profunda</h5>
 
-            <div class="price d-flex justify-content-center align-items-center gap-2 mb-2">
-              <span class="text-muted text-decoration-line-through">€44,99</span>
-              <span class="fw-bold text-danger">€29,99</span>
+            <div class="d-flex align-items-baseline gap-2 mb-3">
+              <p class="text-muted mb-0"><s>€254,99</s></p>
+              <p class="fw-bold text-danger mb-0">€239,99</p>
             </div>
 
-            <div class="d-flex align-items-center justify-content-center quantity-selector mb-3">
+            <div class="quantity-selector d-flex justify-content-center align-items-center gap-2 mb-3">
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">-</button>
-              <input type="number" class="form-control text-center mx-2" value="1" min="1" style="width: 60px;">
+              <input type="number" class="form-control text-center quantity-input" value="1" min="1">
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
             </div>
 
-            <button class="btn btn-primary w-100">Comprar Agora</button>
-          </div>
-        </div>
-      </div>
+            <a href="#" class="btn btn-primary mt-auto">Comprar agora</a>
 
-      <!-- Card 4 -->
-      <div class="col" style="flex: 0 0 auto; min-width: 250px;">
-        <div class="card product-card h-100 text-center p-3 shadow-sm">
-          <img src="assets/images/product4.png" class="card-img-top" alt="Produto 4">
-
-          <div class="card-body">
-            <div class="mb-2">
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-fill text-warning"></i>
-              <i class="bi bi-star-half text-warning"></i>
-              <i class="bi bi-star text-warning"></i>
-              <i class="bi bi-star text-warning"></i>
-              <span class="small text-muted">(18 avaliações)</span>
-            </div>
-
-            <h5 class="card-title">Máscara Facial Detox</h5>
-
-            <div class="price d-flex justify-content-center align-items-center gap-2 mb-2">
-              <span class="text-muted text-decoration-line-through">€49,99</span>
-              <span class="fw-bold text-danger">€34,99</span>
-            </div>
-
-            <div class="d-flex align-items-center justify-content-center quantity-selector mb-3">
-              <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">-</button>
-              <input type="number" class="form-control text-center mx-2" value="1" min="1" style="width: 60px;">
-              <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
-            </div>
-
-            <button class="btn btn-primary w-100">Comprar Agora</button>
           </div>
         </div>
       </div>
     </div>
 
-
-    <!-- Barra de scroll para indicar arrastar -->
-    <div class="scroll-indicator text-center mt-3">
-      <div class="progress mx-auto" style="max-width: 300px; height: 6px;">
-        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 50%;"></div>
-      </div>
+    <div class="text-center mt-5">
+      <a href="#" class="btn btn-outline-primary btn-lg">Ver Todos</a>
     </div>
+
   </div>
 </section>
+
+
+
+
+
 
 
 

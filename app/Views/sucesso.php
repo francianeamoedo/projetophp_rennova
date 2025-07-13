@@ -22,26 +22,14 @@
       <h6>Produtos:</h6>
       <ul class="list-group mb-4">
         <li class="list-group-item d-flex justify-content-between">
-          <span>Avanova Serum 30ml</span>
-          <span>€14.99</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between">
-          <span>Retinol Ampoule 30ml</span>
-          <span>€24.99</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between">
-          <span>Marine Collagen 30ml</span>
-          <span>€24.99</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between">
-          <span>Sunscreen SPF 50 30ml</span>
-          <span>€19.99</span>
+          <span><?php echo htmlspecialchars($product_selected['name']); ?></span>
+          <span>€<?php echo number_format($product_selected['price'], 2); ?> x<?php echo $quantity; ?></span>
         </li>
       </ul>
 
       <div class="d-flex justify-content-between fw-bold">
         <span>Total Pago:</span>
-        <span>€94.30</span>
+        <span><?php echo number_format($total_price, 2); ?></span>
       </div>
     </div>
 

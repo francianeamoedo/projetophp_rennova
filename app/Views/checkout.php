@@ -92,7 +92,7 @@
             </label>
           </div>
 
-          <button type="submit" class="btn btn-success w-100">ADD PAYMENT METHOD</button>
+          <button type="submit" class="btn btn-success w-100">ADICIONAR PAGAMENTO</button>
         </form>
       </div>
     </div>
@@ -119,11 +119,19 @@
       </div>
 
       <!-- Resumo -->
+      <?php
+          $quantity_product = isset($quantity_product) ? $quantity_product : 1;
+          $product_price    = $product_selected['with_promo'] ? $product_selected['price_off'] : $product_selected['price'];
+          $subtotal_price   = number_format($product_price * $quantity_product, 2);
+
+          $estimated_taxes = 9.34;
+          $total_price     = $subtotal_price + $estimated_taxes;
+      ?>
       <div class="card p-3 mb-4">
         <h6>SUMMARY</h6>
         <ul class="list-unstyled mb-2">
           <li class="d-flex justify-content-between">
-            <span>Subtotal</span><span>€84.96</span>
+            <span>Subtotal</span><span>€<?php echo $subtotal_price; ?></span>
           </li>
           <li class="d-flex justify-content-between">
             <span>Delivery Fee</span><span><s class="text-muted">€5.00</s> <span class="text-success">Free</span></span>
@@ -132,12 +140,12 @@
             <span>Voucher Discount</span><span>-€0.00</span>
           </li>
           <li class="d-flex justify-content-between">
-            <span>Estimated Taxes</span><span>€9.34</span>
+            <span>Estimated Taxes</span><span>€<?php echo number_format($estimated_taxes, 2); ?></span>
           </li>
         </ul>
         <hr>
         <div class="d-flex justify-content-between fw-bold">
-          <span>Total</span><span>€94.30</span>
+          <span>Total</span><span>€<?php echo number_format($total_price, 2); ?></span>
         </div>
       </div>
 
@@ -156,9 +164,12 @@
         </form>
       </div>
 
-      <!-- Botão de Pagamento -->
       <form method="post" action="<?php echo base_url('/checkout/processar'); ?>">
-        <button type="submit" class="btn btn-success w-100 btn-lg">FINALIZAR PEDIDO (€94.30)</button>
+        <input type="hidden" name="product_id" value="<?php echo $product_selected['id']; ?>">
+        <input type="hidden" name="quantity" value="<?php echo $quantity_product; ?>">
+        <input type="hidden" name="total_price" value="<?php echo $total_price; ?>">
+        <button type="submit" class="btn btn-success w-100 btn-lg">FINALIZAR PEDIDO
+          (€<?php echo number_format($total_price, 2); ?>)</button>
       </form>
     </div>
   </div>

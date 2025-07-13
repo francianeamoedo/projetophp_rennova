@@ -187,8 +187,8 @@
             <h5 class="card-title">💧✨ Ultra Hidratação Revitalizante e Nutrição Profunda</h5>
 
             <div class="d-flex align-items-baseline gap-2 mb-3">
-              <p class="text-muted mb-0"><s>€59,99</s></p>
-              <p class="fw-bold text-danger mb-0">€39,99</p>
+              <p class="text-muted mb-0"><s>€254,99</s></p>
+              <p class="fw-bold text-danger mb-0">€239,99</p>
             </div>
 
             <div class="quantity-selector d-flex justify-content-center align-items-center gap-2 mb-3">
@@ -205,7 +205,7 @@
     </div>
 
     <div class="text-center mt-5">
-      <a href="#" class="btn btn-outline-primary btn-lg">OUTRAS LINHAS DE CUIDADO</a>
+      <a href="#" class="btn btn-outline-primary btn-lg">Ver Todos</a>
     </div>
 
   </div>
