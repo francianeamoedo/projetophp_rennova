@@ -37,7 +37,7 @@
 
               <div class="d-flex align-items-center gap-3 mb-2">
                 <span
-                  class="fw-bold text-danger">€<?php echo number_format($product_selected['price_off'], 2, ',', '.'); ?></span>
+                  class="fw-bold">€<?php echo number_format($product_selected['price_off'], 2, ',', '.'); ?></span>
                 <span
                   class="text-muted text-decoration-line-through">€<?php echo number_format($product_selected['price'], 2, ',', '.'); ?></span>
 
@@ -74,20 +74,25 @@
       <div class="col-md-4">
         <!-- Resumo -->
         <div class="card mb-4 p-3">
-          <h5>Resumo</h5>
+          <h5 class="card-information" >Resumo</h5>
+
           <ul class="list-unstyled mb-3">
+
             <li class="d-flex justify-content-between">
               <span>Subtotal</span>
               <span id="subtotal">€0,00</span>
             </li>
+
             <li class="d-flex justify-content-between">
               <span>Entrega</span>
               <span>Grátis</span>
             </li>
+
             <li class="d-flex justify-content-between">
               <span>Desconto (voucher)</span>
               <span id="voucher">- €0,00</span>
             </li>
+
             <li class="d-flex justify-content-between">
               <span>Taxas estimadas</span>
               <span id="tax">€9,34</span>
@@ -101,13 +106,13 @@
         </div>
 
         <div class="card mb-4 p-3">
-          <h6>Voucher de Desconto</h6>
-          <input type="text" name="voucher" class="form-control" placeholder="Digite o código">
-          <button type="button" class="btn btn-outline-primary">Aplicar</button>
+          <h5 class="card-information">Voucher de Desconto</h5>
+          <input type="text" name="voucher" class="form-control mt-2" placeholder="NJKDISC5">
+          <button type="button" class="btn btn-outline-secondary-use mt-2">Aplicar Promoção</button>
           <p class="text-success mt-2 small">Voucher aplicado com sucesso! Frete grátis garantido.</p>
         </div>
 
-        <button type="submit" class="btn btn-success w-100 py-2 fw-bold" id="checkout-btn">
+        <button type="submit" class="btn btn-primary-compra w-100 py-2 fw-bold" id="checkout-btn">
           Checkout (€0,00)
         </button>
       </div>
@@ -115,7 +120,7 @@
   </section>
 </form>
 
-<section class="novidades-section py-5">
+<section class="recomendados py-5">
   <div class="container">
 
     <div class="text-center mb-5">
@@ -148,7 +153,7 @@
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
             </div>
 
-            <a href="#" class="btn btn-primary mt-auto">Comprar agora</a>
+            <a href="#" class="btn btn-primary-compra mt-auto">Comprar agora</a>
 
           </div>
         </div>
@@ -177,7 +182,7 @@
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
             </div>
 
-            <a href="#" class="btn btn-primary mt-auto">Comprar agora</a>
+            <a href="#" class="btn btn-primary-compra mt-auto">Comprar agora</a>
 
           </div>
         </div>
@@ -208,7 +213,7 @@
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
             </div>
 
-            <a href="#" class="btn btn-primary mt-auto">Comprar agora</a>
+            <a href="#" class="btn btn-primary-compra mt-auto">Comprar agora</a>
 
           </div>
         </div>
@@ -240,7 +245,7 @@
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
             </div>
 
-            <a href="#" class="btn btn-primary mt-auto">Comprar agora</a>
+            <a href="#" class="btn btn-primary-compra mt-auto">Comprar agora</a>
 
           </div>
         </div>

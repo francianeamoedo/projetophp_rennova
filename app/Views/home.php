@@ -55,7 +55,7 @@
               </div>
               <input type="hidden" name="product_id" value="<?php echo $product['id']; ?>">
 
-              <button type="submit" class="btn btn-primary mt-auto w-100">Comprar Agora</button>
+              <button type="submit" class="btn btn-primary-compra mt-auto w-100">Comprar Agora</button>
             </form>
 
           </div>
@@ -65,10 +65,6 @@
     </div>
 
   </div>
-</section>
-
-<section class="beneficios-section">
-  <img src="assets/images/benefits.png" alt="Benefícios Rennova" class="img-fluid w-60" />
 </section>
 
 
@@ -106,7 +102,7 @@
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
             </div>
 
-            <a href="#" class="btn btn-primary mt-auto">Comprar agora</a>
+            <a href="#" class="btn btn-primary-compra mt-auto">Comprar agora</a>
 
           </div>
         </div>
@@ -135,7 +131,7 @@
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
             </div>
 
-            <a href="#" class="btn btn-primary mt-auto">Comprar agora</a>
+            <a href="#" class="btn btn-primary-compra mt-auto">Comprar agora</a>
 
           </div>
         </div>
@@ -166,7 +162,7 @@
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
             </div>
 
-            <a href="#" class="btn btn-primary mt-auto">Comprar agora</a>
+            <a href="#" class="btn btn-primary-compra mt-auto">Comprar agora</a>
 
           </div>
         </div>
@@ -182,7 +178,7 @@
 
             <div class="mb-2">
               <span class="text-warning fs-4">★★★★★</span>
-              <small class="text-muted ms-2">(<?php echo rand(10, 5100); ?> avaliações)</small>
+              <small class="text-muted ms-2">(<?php echo rand(10, 1500); ?> avaliações)</small>
             </div>
 
             <h5 class="card-title">💧✨ Ultra Hidratação Revitalizante e Nutrição Profunda</h5>
@@ -198,7 +194,7 @@
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
             </div>
 
-            <a href="#" class="btn btn-primary mt-auto">Comprar agora</a>
+            <a href="#" class="btn btn-primary-compra mt-auto">Comprar agora</a>
 
           </div>
         </div>
@@ -206,12 +202,16 @@
     </div>
 
     <div class="text-center mt-5">
-      <a href="#" class="btn btn-outline-primary btn-lg">Ver Todos</a>
+      <a href="#" class="btn btn-outline-secondary btn-lg">Ver Todos</a>
     </div>
 
   </div>
 </section>
 
+
+<section class="beneficios-section">
+  <img src="assets/images/benefits.png" alt="Benefícios Rennova" class="img-fluid w-60" />
+</section>
 
 <!-- Seção com imagem de fundo e título -->
 <section
@@ -238,7 +238,7 @@
           <div class="card-body d-flex flex-column">
             <div class="mb-2">
               <span class="text-warning fs-4">★★★★★</span>
-              <small class="text-muted ms-2">(<?php echo rand(10, 14150); ?> avaliações)</small>
+              <small class="text-muted ms-2">(<?php echo rand(10, 1450); ?> avaliações)</small>
             </div>
             <h5 class="card-title">Combo Skin Brighten Vitamina SPF 30 PA</h5>
             <div class="d-flex align-items-baseline gap-2 mb-3">
@@ -250,7 +250,7 @@
               <input type="number" class="form-control text-center quantity-input" value="1" min="1">
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
             </div>
-            <a href="#" class="btn btn-primary mt-auto">Comprar Agora</a>
+            <a href="#" class="btn btn-primary-compra mt-auto">Comprar Agora</a>
           </div>
         </div>
       </div>
@@ -262,7 +262,7 @@
           <div class="card-body d-flex flex-column">
             <div class="mb-2">
               <span class="text-warning fs-4">★★★★★</span>
-              <small class="text-muted ms-2">(<?php echo rand(10, 80350); ?> avaliações)</small>
+              <small class="text-muted ms-2">(<?php echo rand(10, 8350); ?> avaliações)</small>
             </div>
             <h5 class="card-title">Rennova Skin Bae Beleza Solar SPF 50 PA</h5>
             <div class="d-flex align-items-baseline gap-2 mb-3">
@@ -274,7 +274,7 @@
               <input type="number" class="form-control text-center quantity-input" value="1" min="1">
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
             </div>
-            <a href="#" class="btn btn-primary mt-auto">Comprar Agora</a>
+            <a href="#" class="btn btn-primary-compra mt-auto">Comprar Agora</a>
           </div>
         </div>
       </div>
@@ -287,7 +287,7 @@
           <div class="card-body d-flex flex-column">
             <div class="mb-2">
               <span class="text-warning fs-4">★★★★★</span>
-              <small class="text-muted ms-2">(<?php echo rand(10, 94350); ?> avaliações)</small>
+              <small class="text-muted ms-2">(<?php echo rand(10, 4350); ?> avaliações)</small>
             </div>
             <h5 class="card-title">Rennova Time to Look Glow Up SPF 50 PA</h5>
             <div class="d-flex align-items-baseline gap-2 mb-3">
@@ -299,7 +299,7 @@
               <input type="number" class="form-control text-center quantity-input" value="1" min="1">
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
             </div>
-            <a href="#" class="btn btn-primary mt-auto">Comprar Agora</a>
+            <a href="#" class="btn btn-primary-compra mt-auto">Comprar Agora</a>
           </div>
         </div>
       </div>
@@ -312,7 +312,7 @@
           <div class="card-body d-flex flex-column">
             <div class="mb-2">
               <span class="text-warning fs-4">★★★★★</span>
-              <small class="text-muted ms-2">(<?php echo rand(10, 69250); ?> avaliações)</small>
+              <small class="text-muted ms-2">(<?php echo rand(10, 9250); ?> avaliações)</small>
             </div>
             <h5 class="card-title">HydraBalance Tonic Calmante & Glow</h5>
             <div class="d-flex align-items-baseline gap-2 mb-3">
@@ -324,14 +324,14 @@
               <input type="number" class="form-control text-center quantity-input" value="1" min="1">
               <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button">+</button>
             </div>
-            <a href="#" class="btn btn-primary mt-auto">Comprar Agora</a>
+            <a href="#" class="btn btn-primary-compra mt-auto">Comprar Agora</a>
           </div>
         </div>
       </div>
     </div>
 
     <div class="text-center mt-5">
-      <a href="#" class="btn btn-outline-primary btn-lg">Ver Todos</a>
+      <a href="#" class="btn btn-outline-secondary btn-lg">Ver Todos</a>
     </div>
 
   </div>
@@ -525,7 +525,7 @@
 
     <!-- Botão Saiba Mais -->
     <div class="text-center mt-5">
-      <a href="#" class="btn btn-outline-primary btn-lg">Saiba Mais</a>
+      <a href="#" class="btn btn-outline-secondary btn-lg">Saiba Mais</a>
     </div>
 
   </div>

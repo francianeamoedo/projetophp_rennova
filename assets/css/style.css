@@ -2,7 +2,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.6;
-  color: #2b3e28;
+  color: #161616;
 }
 
 /* Hero Section */
@@ -69,9 +69,9 @@ body {
 }
 
 
-/* Seção de Novidades (nao consigo mudar a cor do background)*/
+/* Seção de Novidades*/
 .novidades-section {
-  background-color: #904800;
+  background-color: #F9F5F1;
 }
 
 
@@ -115,22 +115,31 @@ body {
 
 /* Depoimentos */
 .depoimento-card {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: #fff;
   border-radius: 12px;
 }
 
+
+
 .depoimento-card p {
   font-size: 0.95rem;
+  color: #161616;
 }
+
+
 
 /* Blog Rennova */
 .blog-card h6 {
   font-size: 1rem;
 }
 
+
+
 .blog-card p {
   font-size: 0.875rem;
 }
+
+
 
 /* Folhas background (seção final) */
 .folhas-section {
@@ -138,11 +147,15 @@ body {
   height: 120px;
 }
 
+
+
 /* Ultimos Benefícios */
 .ultimos-beneficios h6 {
   font-size: 0.95rem;
   color: #222;
 }
+
+
 
 /* Quantity Buttons */
 .quantity-selector input[type="number"] {
@@ -156,30 +169,66 @@ body {
   font-size: 1rem;
 }
 
+
+
+
 /* Botões principais */
-.btn-primary {
+.btn-primary-compra {
   background-color: #6a9a64;
+  color: #fff;
+  border-color: #6a9a64;
 }
 
-.btn-primary:hover {
+.btn-primary-compra:hover {
   background-color: #6a9a64;
+  border-color: #6a9a64;
 }
 
-.btn-outline-primary {
-  color: #FFFFFF;
+
+.btn-light {
+  background-color: #E6D9C6;
+  color: #161616;
 }
 
-.btn-outline-primary:hover {
-  background-color: #FFFFFF;
+.btn-light:hover {
+  background-color: #E6D9C6;
+  color: #161616;
+}
+
+
+/* Botões secundários */
+
+.btn-outline-secondary {
+  border-color: #D1D1D1;
+  color: #161616;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6a9a64;
   color: #fff;
 }
 
-/* Botões secundários */
-.btn-outline-secondary:hover {
-  background-color: #6a9a64;
+.btn-outline-secondary-favorite {
+  border-color: #ACC7A9;
+  color: #6A9A64;
 }
 
-/* Paginação (se for usada em produtos.php) */
+.btn-outline-secondary-details {
+  background-color: #F6F6F6;
+  color: #161616;
+}
+
+.btn-outline-secondary-use {
+  background-color: #161616;
+  color: #fff;
+}
+
+.btn-outline-secondary-use:hover {
+  background-color: #6A9A64;
+  color: #161616;
+}
+
+/* Paginação */
 .pagination {
   justify-content: center;
 }
@@ -239,6 +288,12 @@ body {
     }
 
 
+    .card-information {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #6A9A64;
+    }
+
 
     /* Estilização do login */
 
@@ -256,3 +311,4 @@ body {
   justify-content: center;
   align-items: center;
 }
+

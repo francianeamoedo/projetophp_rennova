@@ -12,7 +12,7 @@
     </div>
 
     <div class="info-item d-flex align-items-center gap-2 px-3">
-      <i class="bi bi-credit-card-2-front-fill info-icon"></i>
+      <i class="bi bi-credit-card-fill info-icon"></i>
       <span class="fw-semibold">Pague em até 3x com Klarna</span>
     </div>
 

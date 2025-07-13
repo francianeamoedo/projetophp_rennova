@@ -11,7 +11,7 @@
           <div class="d-flex flex-column flex-sm-row w-100 gap-2">
             <label for="newsletter1" class="visually-hidden">Endereço de e-mail</label>
             <input id="newsletter1" type="email" class="form-control" placeholder="Introduza o seu e-mail">
-            <button class="btn btn-primary" type="submit">SUBSCREVER</button>
+            <button class="btn btn-primary-compra" type="submit">SUBSCREVER</button>
           </div>
         </form>
       </div>

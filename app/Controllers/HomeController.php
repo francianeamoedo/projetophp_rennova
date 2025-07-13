@@ -30,7 +30,7 @@ class HomeController
             $product = $this->productModel->find($id);
         }
 
-        require_once __DIR__ . '/../Views/creme_facial_com_acido_hialuronico.php';
+        require_once __DIR__ . '/../Views/produto.php';
     }
     public function carrinho()
     {

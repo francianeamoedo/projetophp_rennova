@@ -45,20 +45,20 @@
       <div class="d-flex align-items-center gap-3">
         <div class="text-center">
           <a href="#" role="button" class="btn btn-sm">
-            <i class="bi bi-shop fs-5"></i><br />
+            <i class="bi bi-geo-alt fs-5"></i><br />
             <span class="fs-6">Lojas</span>
           </a>
         </div>
         <div class="text-center">
           <a href="<?php echo base_url("/carrinho"); ?>" role="button" class="btn btn-sm">
-            <i class="bi bi-cart fs-5"></i><br />
+            <i class="bi bi-handbag fs-5"></i><br />
             <span class="fs-6">Carrinho</span>
           </a>
         </div>
         <div class="text-center">
           <a href="#" role="button" class="btn btn-sm">
             <i class="bi bi-person fs-5"></i><br />
-            <span class="fs-6">Iniciar Sessão</span>
+            <span class="fs-6">Login</span>
           </a>
         </div>
       </div>
