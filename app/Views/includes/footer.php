@@ -60,13 +60,12 @@
         </div>
 
         <h5 class="fw-bold mt-4">PAGAMENTO</h5>
-        <div class="d-flex flex-wrap gap-2">
-          <img src="assets/payments/paypal.png" alt="PayPal" width="150" height="150">
-          <img src="assets/payments/mastercard.png" alt="Mastercard" width="150" height="150">
-          <img src="assets/payments/visa.png" alt="Visa" width="150" height="150">
-          <img src="assets/payments/klarna.png" alt="Klarna" width="150" height="150">
-          <img src="assets/payments/multibanco.png" alt="Multibanco" width="150" height="150">
-          <img src="assets/payments/mbway.png" alt="MB Way" width="150" height="150">
+        <div class="d-flex flex-wrap gap-1 align-items-center">
+          <img src="<?php echo base_url("/assets/images/paypal.png") ?>" alt="PayPal" width="25" height="25">
+          <img src="<?php echo base_url("/assets/images/mastercard.png") ?>" alt="Mastercard" width="25" height="25">
+          <img src="<?php echo base_url("/assets/images/visa.png") ?>" alt="Visa" width="25" height="25">
+          <img src="<?php echo base_url("/assets/images/klarna.png") ?>" alt="Klarna" width="32" height="25">
+          <img src="<?php echo base_url("/assets/images/mbway.png") ?>" alt="MB Way" width="48" height="20">
         </div>
       </div>
     </div>
@@ -80,4 +79,3 @@
     </div>
   </div>
 </footer>
-

@@ -1,9 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".quantity-btn").forEach((button) => {
-    console.log("Button found:", button);
     button.addEventListener("click", function () {
-      console.log("Button click:", button);
-
       const productId = this.dataset.productId;
       if (!productId) return;
 

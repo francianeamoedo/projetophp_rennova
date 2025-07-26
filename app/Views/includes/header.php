@@ -26,7 +26,7 @@
 <body>
 
   <!-- Header com sombra e navegação -->
-  <header class="container-fluid shadow-sm bg-white sticky-top">
+  <header class="container-fluid shadow-sm bg-white sticky-lg-top">
     <div class="container d-flex flex-wrap justify-content-between align-items-center">
 
       <!-- Logo -->

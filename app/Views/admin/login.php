@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <title>Login - Rennova</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
@@ -14,12 +13,12 @@
     <form method="POST" action="/projetophp_rennova/login">
       <div class="form-floating">
         <label for="floatingInput">Usuário</label> <br />
-        <input type="text" class="form-control" name="username" placeholder="Usuário" required>
+        <input type="text" class="form-control" name="username" style="width:100%;" placeholder="Usuário" required>
       </div>
       <br />
       <div class="form-floating">
         <label for="floatingPassword">Senha</label> <br />
-        <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password"
+        <input type="password" class="form-control" id="floatingPassword" style="width:100%;" name="password" placeholder="Password"
           required>
       </div>
       <div class="form-check text-start my-3">

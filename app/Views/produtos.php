@@ -107,7 +107,7 @@
                     <input id="quantity_product_<?php echo $product['id']; ?>"
                       name="quantity_product_<?php echo $product['id']; ?>" type="number"
                       class="form-control text-center quantity-input" value="1" min="1"
-                      data-product-id="<?php echo $product['id']; ?>" style="width: 60px;">
+                      data-product-id="<?php echo $product['id']; ?>" style="width: 60px; height: 32px;">
 
                     <button class="btn btn-outline-secondary btn-sm quantity-btn" type="button" data-action="increment"
                       data-product-id="<?php echo $product['id']; ?>">+</button>

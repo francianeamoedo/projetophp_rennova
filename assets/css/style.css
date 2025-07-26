@@ -68,17 +68,15 @@ body {
   height: auto;
 }
 
-
 /* Seção de Novidades*/
 .novidades-section {
-  background-color: #F9F5F1;
+  background-color: #f9f5f1;
 }
-
 
 /* Título com imagem de fundo */
 
 .titulo-bg-section {
-  height: 350px;
+  height: 450px;
   overflow: hidden;
 }
 
@@ -119,27 +117,18 @@ body {
   border-radius: 12px;
 }
 
-
-
 .depoimento-card p {
   font-size: 0.95rem;
-  color: #161616;
 }
-
-
 
 /* Blog Rennova */
 .blog-card h6 {
   font-size: 1rem;
 }
 
-
-
 .blog-card p {
   font-size: 0.875rem;
 }
-
-
 
 /* Folhas background (seção final) */
 .folhas-section {
@@ -147,15 +136,11 @@ body {
   height: 120px;
 }
 
-
-
 /* Ultimos Benefícios */
 .ultimos-beneficios h6 {
   font-size: 0.95rem;
   color: #222;
 }
-
-
 
 /* Quantity Buttons */
 .quantity-selector input[type="number"] {
@@ -169,9 +154,6 @@ body {
   font-size: 1rem;
 }
 
-
-
-
 /* Botões principais */
 .btn-primary-compra {
   background-color: #6a9a64;
@@ -184,22 +166,20 @@ body {
   border-color: #6a9a64;
 }
 
-
 .btn-light {
-  background-color: #E6D9C6;
+  background-color: #e6d9c6;
   color: #161616;
 }
 
 .btn-light:hover {
-  background-color: #E6D9C6;
+  background-color: #e6d9c6;
   color: #161616;
 }
-
 
 /* Botões secundários */
 
 .btn-outline-secondary {
-  border-color: #D1D1D1;
+  border-color: #d1d1d1;
   color: #161616;
 }
 
@@ -209,12 +189,12 @@ body {
 }
 
 .btn-outline-secondary-favorite {
-  border-color: #ACC7A9;
-  color: #6A9A64;
+  border-color: #acc7a9;
+  color: #6a9a64;
 }
 
 .btn-outline-secondary-details {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   color: #161616;
 }
 
@@ -224,7 +204,7 @@ body {
 }
 
 .btn-outline-secondary-use:hover {
-  background-color: #6A9A64;
+  background-color: #6a9a64;
   color: #161616;
 }
 
@@ -256,46 +236,42 @@ body {
   max-width: 280px;
 }
 
-
-
 .sidebar {
-      width: 200px;
-      height: 100vh;
-      background-color: #f8f9fa;
-      padding: 1rem;
-    }
+  width: 200px;
+  height: 100vh;
+  background-color: #f8f9fa;
+  padding: 1rem;
+}
 
-    .main-content {
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-    }
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
 
-    .top-header {
-      height: 150px;
-      background-color: #ffffff;
-      border-bottom: 1px solid #dee2e6;
-      padding: 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+.top-header {
+  height: 150px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dee2e6;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-    .content-body {
-      flex-grow: 1;
-      padding: 2rem;
-      background-color: #f1f3f5;
-    }
+.content-body {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #f1f3f5;
+}
 
+.card-information {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #6a9a64;
+}
 
-    .card-information {
-      font-size: 1.25rem;
-      font-weight: bold;
-      color: #6A9A64;
-    }
-
-
-    /* Estilização do login */
+/* Estilização do login */
 
 .login-body {
   margin: 0;
@@ -312,3 +288,7 @@ body {
   align-items: center;
 }
 
+.login-container {
+  width: 400px;
+  margin-left: 25%;
+}
